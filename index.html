@@ -194,23 +194,6 @@ body {
   </style>
 </head>
 <body>
-
-
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      // ✅ সার্ভিস ওয়ার্কার নিবন্ধন করা হচ্ছে 
-      navigator.serviceWorker.register('/adhekarijewellers/sw.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-  }
-</script>
-
-
-  
   <!-- Please select desktop mode and rotate your screen -->
   <header class="header">
     <a href="index.html" class="logo"><img src="https://i.postimg.cc/rsYqMRfZ/logo.png" alt="logo" id="logo1"></a>
