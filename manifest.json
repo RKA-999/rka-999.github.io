@@ -1,19 +1,13 @@
 {
   "name": "Adhekari Jewellers",
-  "short_name": "Jewellers",
-  "description": "Adhekari Jewellers official website", 
-  "start_url": "/adhekarijewellers/",
+  "short_name": "Adhikari Jewellers",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b1b22",
   "icons": [
     {
-      "src": "icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512x512.png",
+      "src": "icon-512x512.png",  
       "sizes": "512x512",
       "type": "image/png"
     }
