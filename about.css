@@ -195,6 +195,97 @@ body {
     font-size: 20px;
     font-weight: 800;
     text-align: center;
+}    .header{
+        padding: 1.3rem 3%;
+    }
+    .icons #close-icon{
+        display: none;
+    }
+}
+@media (max-width: 792px) {
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon {
+    display: none;
+    }
+    #check:checked~.icons #close-icon{
+    display: block;
+    }
+    /* Shutter */
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .8s ease;
+    }
+    #check:checked~.navbar {
+    height: 17.7rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .8s ease;
+    }
+    .navbar a:hover{
+      background: white;
+      border: .1px dashed white;
+      border-radius: 20px;
+      color: var(--gold);
+    }
+    }
+    #check:checked~.navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.05s * var(--i));
+    }
+#menu-icon{
+    font-size: 30px;
+    color: white;
+    transition: 1.2s all ease;
+}
+#close-icon{
+    font-size: 30px;
+    color: red;
+    transition: 1.2s all ease; /* update */
+}
+/*#close-icon:hover {
+    color: #b78829;
+} */ /* update */
+#logo1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes logo{
+  form{border: 0px solid white;
+  }
+  to{
+      border: 1.5px dotted #b78829;
+}
+}
+
+
+#comingsoon{
+    margin-top: 70px;
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
 }        padding: 1.3rem 3%;
     }
     .icons #close-icon{
