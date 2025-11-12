@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
+  <title>Responsive Navbar Using HTML and CSS</title>
   <link rel="stylesheet" href="style.css">
-  
   <link rel="manifest" href="manifest.json">
-  
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -26,85 +24,152 @@
   <nav class="navbar">
     <a href="index.html" style="--i:0;">Home</a>
     <a href="about.html" style="--i:1;">About</a>
-    <a href="gallery.html" style="--i:2;">Gallery</a>
-    <a href="internationalgoldprice.html">International Gold Price</a>
-    <a href="contact.html" style="--i:4;">Contact</a>
+    <a href="galley.html" style="--i:2;">Gallery</a>
+    <a href="internationalgoldprice.html" style="--i:3;">International Gold Price</a>
+    <a href="contact" style="--i:4;">Contact</a>
   </nav>
   </header>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bajus/Edited by R.K.A</title>
-</head>
-<body>
-  <!-- Header -->
+  
+  
+  
+  
+  
+  
+    <!-- Header -->
   <header id="header">
     <div style="display:flex;align-items:center; gap:5px">
-    <a href="tel:01939466248" id="number">Hotline: +8801939466248</a>
+      <a href="tel:01939466248" id="number">হটলাইন: ০১৯৩৯৪৬৬২৪৮</a>
   </header>
-
+  
   <!-- Body -->
   <div class="page">
     <div class="title">
       
       <!-- Pdf Button-->
-      <a class="pdf-btn" href="https://drive.google.com/file/d/15IA3s64v8T0O1kVVn0FsjFtlBL8sflp4/view?usp=drivesdk" rel="noopener">VIEW IN PDF</a>
+      <a class="pdf-btn" href="https://drive.google.com/file/d/1fnQ0HkceJ2ZGEqGBDelpgh6zE9Xpars3/view?usp=drivesdk" rel="noopener">পিডিএফ দেখুন</a>
     </div>
-
+    
     <!-- Gold Rate -->
     <img src="https://i.postimg.cc/MK2Sbwh2/gold-Banner.png" alt="GoldBanner" id="goldbanner">
+    
+    <table border="1" class="goldtable">
+  <tr>
+    <th>Product</th>
+    <th>Description</th>
+    <th>Price<br>BDT/GRAM
+    </th>
+  </tr>
+  <tr>
+    <td class="product1">22 KARAT<br>GOLD</td>
+    <td class="desc1">CADMIUM (HALLMARKED<br>GOLD)</td>
+    <td class="price1">17,379</td>
+  </tr>
+  <tr>
+    <td class="product1">21 KARAT<br>GOLD</td>
+    <td class="desc1">CADMIUM (HALLMARKED<br>GOLD)</td>
+    <td class="price1">16,590</td>
+  </tr>
+  <tr>
+    <td class="product1">18 KARAT<br>GOLD</td>
+    <td class="desc1">CADMIUM (HALLMARKED<br>GOLD)</td>
+    <td class="price1">14,220</td>
+  </tr>
+  <tr>
+    <td class="product1">TRADITIONAL<br>GOLD</td>
+    <td class="desc1">CADMIUM (HALLMARKED<br>GOLD)</td>
+    <td class="price1">11,818</td>
+  </tr>
+</table>
+<!-- silver banner -->
+<img src="https://i.postimg.cc/pTLNrXhq/silverbanner.png" alt="GoldBanner" id="silverbanner">
+<table border="1" class="silvertable">
+  <tr>
+    <th>Product</th>
+    <th>Description</th>
+    <th>Price<br>BDT/GRAM
+    </th>
+  </tr>
+  <tr>
+    <td class="product2">22 KARAT<br>SILVER</td>
+    <td class="desc2">CADMIUM (HALLMARKED<br>SILVER)</td>
+    <td class="price2">364</td>
+  </tr>
+  <tr>
+    <td class="product2">21 KARAT<br>SILVER</td>
+    <td class="desc2">CADMIUM (HALLMARKED<br>SILVER)</td>
+    <td class="price2">347</td>
+  </tr>
+  <tr>
+    <td class="product2">18 KARAT<br>SILVER</td>
+    <td class="desc2">CADMIUM (HALLMARKED<br>SILVER)</td>
+    <td class="price2">298</td>
+  </tr>
+  <tr>
+    <td class="product2">TRADITIONAL<br>SILVER</td>
+    <td class="desc2">CADMIUM (HALLMARKED<br>SILVER)</td>
+    <td class="price2">223</td>
+  </tr>
+</table>
+<br>
+<i class='bxr  bx-broadcast' id="live"></i>
+<div class="note">
+  • সর্বশেষ আপডেট: ০২ নভেম্বর, ২০২৫
+  <br>
+  • সময়: রাত ০৭:০০ ঘটিকা
+</div>
 
-    <!-- Table -->
-    <table class="rates" aria-label="Gold and Silver rates">
-      <thead>
-        <tr>
-          <th>Product</th>
-          <th>Description</th>
-          <th style="text-align: center">Price<br>(BDT/GRAM)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="product1">22 KARAT Gold</td>
-          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
-          <td class="price1">17,873</td>
-        </tr>
-        <tr>
-          <td class="product1">21 KARAT Gold</td>
-          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
-          <td class="price1">17,061</td>
-        </tr>
-        <tr>
-          <td class="product1">18 KARAT Gold</td>
-          <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
-          <td class="price1">14,623</td>
-        </tr>
-         <tr>
-           <td class="product1">Traditional Gold</td>
-           <td class="desc1">CADMIUM (HALLMARKED GOLD)</td>
-           <td class="price1">12,162</td>
-           </tr>
-      </tbody>
-    </table>
+<div class="timebox">
+  <p id="timebanner">বর্তমান তারিখ ও সময়</p>
+  <div id="time">
+    <script>
+      function updateClock() {
+        const now = new Date();
+        
+        // Set the options for a 12-hour format with AM/PM
+        const options = {
+          // Include Date Components
+          weekday: 'long', // e.g., Tue
+          month: 'long', // e.g., Nov
+          day: 'numeric', // e.g., 11
+          year: 'numeric', // e.g., 2025
+          
+          // Include Time Components
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          hour12: true // <<-- This ensures 12-hour format with AM/PM
+        };
+        
+        // Use toLocaleTimeString() to format the date and time based on the options
+        const dateTimeString = now.toLocaleTimeString('en-US', options);
+        // Find the HTML element and insert the formatted time
+        document.getElementById('time').innerHTML = dateTimeString;
+      }
+      
+      // 1. Run the function once immediately to show the time without delay
+      updateClock();
+      
+      // 2. Set the function to run every 1000 milliseconds (1 second) to update the time
+      setInterval(updateClock, 1000);
+    </script>
   </div>
-  <div class="ticker-wrap" aria-hidden="true">
-    <div class="ticker">
-      <div class="text">
-        <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭৮৭৩/- 
-        <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭০৬১/-
+</div>
+
+
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">
+    <div class="text">
+      <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭৩৭৯/-
+      <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৬৫৯০/-
+      <b>●</b> ১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য:১৪২২০/-
+      <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৬৪/-
+      <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৪৭/
+      <b>●</b>১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ২৯৮/—
+    </div>
+  </div>
+</div>
+</body>
+</html>        <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য : ১৭০৬১/-
         <b>●</b> ১৮ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম স্বর্ণের মূল্য: ১৪৬২৩/-
         <b>●</b>২২ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৬৪/-
         <b>●</b>২১ ক্যা: ক্যাডমিয়াম (হলমার্ককৃত) প্রতি গ্রাম রূপার মূল্য : ৩৪৭/
