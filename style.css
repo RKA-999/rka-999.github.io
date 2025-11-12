@@ -204,7 +204,7 @@ body {
     /* Header */
     #header{
       margin-top: 50px;
-      width: 101.2%;   /*update*/
+      width: 105%;   /*update 999999999999*/
       background: linear-gradient(90deg, #0b1b22, #0e2a33);
       color: var(--cream);
       padding:16px;
