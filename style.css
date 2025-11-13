@@ -245,7 +245,8 @@ body {
       font-size: 15px;
       font-family: Hind Siliguri;
       background: transparent;
-      border: .1px solid #23363b;
+      border: 1px solid #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       color:#23363b;
       padding:10px 15px;
       border-radius:15px;
@@ -257,7 +258,7 @@ body {
       background-color: var(--gold);
       color: var(--cream);
       transition: .5s all ease-in;
-      border: 3px solid var(--gold);
+      border: 2px solid var(--gold);
     }
 
 
