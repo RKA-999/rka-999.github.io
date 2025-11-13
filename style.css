@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+
 
 :root {
     --gold: #caa43a;
@@ -13,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: times, sans-serif, pappins;
+    font-family: Hind Siliguri;
 }
 body {
     min-height: 100vh;
@@ -62,7 +64,7 @@ body {
 }
 .logo{
     
-     margin-top: 20px;
+     margin-top: 15px;
      margin-left: 5px;
      font-size: 2rem;
      color: white;
@@ -144,12 +146,14 @@ body {
         opacity: 0;
         transition: .8s ease;
  }
-    .navbar a:hover{
-      background: white;
-      border: .1px dashed white;
-      border-radius: 20px;
-      color: var(--gold);
-    }
+ 
+ .navbar a:hover {
+    background: white;
+    border: .1px dashed white#42445A;
+    border-radius: 20px;
+    color: var(--gold);
+}
+ 
     #check:checked~.navbar a {
     transform: translateY(0);
     opacity: 1;
@@ -193,7 +197,7 @@ body {
     /* Header */
     #header{
       margin-top: 80px;
-      width: 100%;   /*update 999999999999*/
+      width: 100%;
       background: linear-gradient(90deg, #0b1b22);
       color: var(--cream);
       padding:16px;
@@ -209,9 +213,10 @@ body {
     }
   
     #number{
+    font-family: Hind Siliguri;
     margin-top: 25px;
-    margin-left: 216px;
-    font-size:15px; 
+    margin-right: 0px auto;
+    font-size: 16.5px; 
     text-decoration: none;
     color: white;
     text-align: right;
@@ -224,21 +229,21 @@ body {
     }
     /* body 1st content */
     .page{
-      max-width: 1100px;
-      margin: 25px auto;
-      padding: 20px;
+      margin: 10px auto;
+      padding: 5px;
     }
 
     /* pdf Button Position */
     .title{
-      display:flex;
-      align-items: center;
-      margin-bottom:40px;
+      margin-right: 15px;
+      float: right;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     /* pdf button */
     .pdf-btn{
       font-size: 15px;
-      font-family: times;
+      font-family: Hind Siliguri;
       background: transparent;
       border: .1px solid #23363b;
       color:#23363b;
@@ -255,20 +260,6 @@ body {
       border: 3px solid var(--gold);
     }
 
-    /* Gold Rate Banner */
-  #goldbanner {
-  margin-top: 0px;
-  align-items: center;
-  height: auto;
-  width: 100%;
-  border: 1px solid gold;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-
-
-
 
 
 :root{
@@ -276,11 +267,11 @@ body {
     --silver: #D3D3D3;
 }
 body{
-      font-family: times;
+      font-family: Hind Siliguri;
 }
 .goldtable{
       width: 100%;
-      margin-top: 5px;
+      margin-top: 0px auto;
       border-collapse: collapse;
       overflow: hidden;
       border-radius: 20px;
@@ -290,7 +281,8 @@ body{
 }
 .product1{
       width: 28%;
-      font-weight: 700; 
+      font-weight: 700;
+      font-family: Hind Siliguri;
       color:#21303a;
       text-align: center;
 }
@@ -310,12 +302,12 @@ body{
 .goldtable th {
       background: #0d2930;
       color: var(--gold);
-      padding: 17px;
-      font-size: 15px;
+      padding: 20px; /* update */
+      font-size: 16px;
       text-align: center;
 }
 .goldtable td{
-      padding: 25px 1px; /* update */
+      padding: 25px 25px; /* update */
       background: #fdf1af;
       border-bottom: solid rgba(0, 0, 0, 0.7);
       font-size: 15px;
@@ -348,7 +340,7 @@ body{
 }
 .silvertable{
       width: 100%;
-      margin-top: 5px;
+      margin-top: 0px auto#42445A;
       border-collapse: collapse;
       overflow: hidden;
       border-radius: 20px;
@@ -383,7 +375,7 @@ body{
       text-align: center;
 }
 .silvertable td{
-      padding: 25px 1px;
+      padding: 25px 25px;
       background: var(--silver);
       border-bottom: solid rgba(0, 0, 0, 0.7);
       font-size: 15px;
@@ -393,8 +385,8 @@ body{
     
     /* Last Update */
     .note{
-      margin-top: 15px; 
-      margin-left: 10px;
+      margin-top: 15px;
+      text-align: center;
       font-size: 15px; 
       font-weight: 500;
       color: var(--cream);
@@ -417,7 +409,9 @@ body{
     }
     #live{
       margin-top: 15px; 
-      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 35px; 
       font-weight: 500;
       color: var(--cream);
@@ -435,31 +429,32 @@ body{
     }
     
     .timebox{
-      padding: 10px;
-      margin-top: 50px;
-      margin-bottom: 25px;
+      padding: 5px 5px;
+      margin: 5px auto;
+      margin-bottom: 50px;
       background-color: whitesmoke;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       height: auto;
       border-radius: 20px;
-      width: 350px;
+      width: 300px;
       border: 2px solid var(--gold);
       box-shadow: 1px 1px var(--gold);
     }
     #timebanner {
-      text-shadow: 1.5px .5px black;
+      font-family: Hind Siliguri;
       color: black;
-      font-size: 18px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin-top: 30px;
+      font-size: 17px;
+      padding: 10px;
+      margin-top: 0px auto;
       font-weight: bold;
 }
     #time{
       color: red;
-      text-shadow: 1px .5px black;
       font-size: 15px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin-top: 30px;
+      font-family: Hind Siliguri;
+      margin-top: 20px;
       font-weight: bold;
       margin-bottom: 30px;
     }
