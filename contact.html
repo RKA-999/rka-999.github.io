@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
+  <title>Responsive Navbar Using HTML and CSS</title>
   <link rel="stylesheet" href="contact.css">
-  
   <link rel="manifest" href="manifest.json">
-  
   <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -26,52 +24,56 @@
   <nav class="navbar">
     <a href="index.html" style="--i:0;">Home</a>
     <a href="about.html" style="--i:1;">About</a>
-    <a href="gallery.html" style="--i:2;">Gallery</a>
-    <a href="internationalgoldprice.html">International Gold Price</a>
-    <a href="contact.html" style="--i:4;">Contact</a>
+    <a href="galley.html" style="--i:2;">Gallery</a>
+    <a href="internationalgoldprice.html" style="--i:3;">International Gold Price</a>
+    <a href="contact" style="--i:4;">Contact</a>
   </nav>
   </header>
-</body>
-</html>
-
-<br>
-
-<!DOCTYPE html>"
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact me</title>
-  <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-  <header>
-    <h3 id="call">Contact us</h3>
-  </header>
   
-  <div class="all">
-    <div class="boldtext">
-      Message/Call on Whatsapp
+    <!-- Header -->
+  <header id="header">
+    <div style="display:flex;align-items:center; gap:5px">
+      <a href="tel:01939466248" id="number">হটলাইন: ০১৯৩৯৪৬৬২৪৮</a>
+  </header>
+
+  <div class="contact-container">
+  
+  <div class="contact-card whatsapp">
+    <h3 class="card-title">আমাদের সাথে চ্যাট অথবা কল করুন</h3>
+    <div class="icon-wrapper">
+      <img src="https://i.postimg.cc/NFL56cV1/whatsapp.png" alt="WhatsApp Icon" class="card-icon">
     </div>
-   <a href="https://wa.me/qr/RB7HWRFBZJS7L1"><img src="https://i.postimg.cc/NFL56cV1/whatsapp.png" alt="whatsapp" id="whatsapplogo"/></a>
-   
-   <br>
-   <div class="boldtext">
-     Mail to us
-   </div>
-   <a href="mailto:rahit161369853775@gmail.com"><img src="https://i.postimg.cc/B6n633qs/gmail.png" alt="gmail" id="gmaillogo"></a>
-   
-   <br>
-   <div class="boldtext">
-     Visit Our Website
-   </div>
-   <a href="https://rkahce999.weebly.com/"><img src="https://i.postimg.cc/xC807PRH/website.png" alt="website" id="websitelogo"></a>
-   
-   <br>
-   <div class="boldtext">
-    Location of the Store 
-   </div>
-     <a href="https://goo.gl/maps/i5DudCKZjXs3ZLXU6"><img src="https://i.postimg.cc/Vkz5gn31/map.png" alt="map" id="maplogo"></a>
+    <p class="card-description">সহজে যোগাযোগের জন্য যেকোনো সময় আমাদের হোয়াটসঅ্যাপ নম্বরে মেসেজ অথবা কল করুন।</p>
+    <a href="whatsapp://send?phone=+8801323168482" class="action-button">মেসেজ পাঠান</a>
+  </div>
+  
+  <div class="contact-card email">
+    <h3 class="card-title">ইমেইল করুন</h3>
+    <div class="icon-wrapper">
+      <img src="https://i.postimg.cc/B6n633qs/gmail.png" alt="Email Icon" class="card-icon">
+    </div>
+    <p class="card-description">বিস্তারিত জিজ্ঞাসা বা দাপ্তরিক যোগাযোগের জন্য ইমেইল ব্যবহার করুন।</p>
+    <a href="mailto: rahit161369853775@gmail.com" class="action-button">ইমেইল করুন</a>
+  </div>
+  
+  <div class="contact-card website">
+    <h3 class="card-title">আমাদের ওয়েবসাইট ভিজিট করুন</h3>
+    <div class="icon-wrapper">
+      <img src="https://i.postimg.cc/xC807PRH/website.png" alt="Website Icon" class="card-icon">
+    </div>
+    <p class="card-description">আমাদের অফিসিয়াল ওয়েবসাইটে যান।</p>
+    <a href="https://rka-999.github.io/adhekarijewellers/" target="_blank" class="action-button">ভিজিট করুন</a>
+  </div>
+  
+  <div class="contact-card location">
+    <h3 class="card-title">স্টোরের অবস্থান দেখুন</h3>
+    <div class="icon-wrapper">
+      <img src="https://i.postimg.cc/Vkz5gn31/map.png" alt="Location Icon" class="card-icon">
+    </div>
+    <p class="card-description">আমাদের স্টোরে সরাসরি আসতে বা ঠিকানা জানতে গুগল ম্যাপে দেখুন।</p>
+    <a href="https://goo.gl/maps/i5DudCKZjXs3ZLXU6" target="_blank" class="action-button">মানচিত্রে দেখুন</a>
+  </div>
+  
 </div>
 </body>
 </html>
