@@ -239,7 +239,12 @@ body {
       float: right;
       margin-top: 40px;
       margin-bottom: 40px;
+      transition: 1s all ease;
     }
+    .title:hover{
+        transform: translateY(-10px);
+    }
+    
     /* pdf button */
     .pdf-btn{
       font-size: 15px;
@@ -272,6 +277,7 @@ body{
       font-family: Hind Siliguri;
 }
 .goldtable{
+      margin-top: -7.5px; /* update */
       width: 100%;
       margin-top: 0px auto;
       border-collapse: collapse;
@@ -341,6 +347,7 @@ body{
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 .silvertable{
+      margin-top: -4.5px; /* update */
       width: 100%;
       margin-top: 0px auto#42445A;
       border-collapse: collapse;
