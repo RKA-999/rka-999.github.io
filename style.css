@@ -242,7 +242,7 @@ body {
       transition: 1s all ease;
     }
     .title:hover{
-        transform: translateY(-10px);
+        transform: translateY(-8px);
     }
     
     /* pdf button */
@@ -261,9 +261,7 @@ body {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     .pdf-btn:hover{
-      background-color: var(--gold);
-      color: var(--cream);
-      border: 1px solid var(--gold);
+      border: 1px solid #ffffff;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
