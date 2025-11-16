@@ -255,7 +255,41 @@ body {
     }
     
 
-    
+  /* Last Update */
+    #notecard{
+        background-color: #F9F4F4;
+        border: 1px solid #F1E5E5;
+        border-radius: 20px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #notebanner{
+       color: #FFFFFF;
+       text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+        
+        
+    }
+    .note{
+      margin-top: -5px;
+      text-align: center;
+      font-size: 15px; 
+      font-weight: 1000;
+      color: var(--cream);
+      font-weight: 700;
+      animation: onoff 1.5s normal infinite;
+    }
+    @keyframes onoff{
+      from{
+        color: '';
+      }
+      to{
+        color: red;
+      }
+    }
     
     
     
@@ -330,16 +364,26 @@ body {
       margin: 10px auto;
       padding: 5px;
     }
+    
+    /* pdf and download - btn*/
+    .pdf-view-downloar{
+        margin-right: 5px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+    
+    
+    
 
     /* pdf Button Position */
-    .title{
-      margin-right: 15px;
+    .pdf-btn-position{
       float: right;
-      margin-top: 40px;
       margin-bottom: 40px;
       transition: 1s all ease;
     }
-    .title:hover{
+    .pdf-btn-position:hover{
         transform: translateY(-10px);
     }
     
@@ -350,39 +394,48 @@ body {
       font-family: Hind Siliguri;
       background: transparent;
       color:#23363b;
-      padding:10px 15px;
-      border-radius:15px;
-      text-decoration:none;
-      font-weight:500;
+      padding: 10px 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      font-weight: 500;
       transition: 1s all ease;
-      
       border: 1px solid #ffffff;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     }
     .pdf-btn:hover{
       border: 1px solid #D9D8E2;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
+    /* Download button position*/
+      .download-btn-position{
+        transition: 1s all ease;
+        border: 1px dotted var(--cream);
+    }
     
-    
+     .download-btn-position:hover{
+    transform: translateY(10px);
+    box-shadow: 0 4px 12px var(--cream);
+     }
+      /* download btn */
     .download-btn{
         font-size: 15px;
         font-family: Hind Siliguri;
         background: transparent;
         color:#23363b;
-        padding:10px 15px;
+        padding: 10px 20px;
         border-radius:15px;
         text-decoration:none;
         font-weight:500;
-        transition: 1s all ease;
         border: 1px solid #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     }
     .download-btn:hover{
         border: 1px solid #D9D8E2;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+  
+    
     .download-img{
         height: auto;
         width: 15px;
@@ -529,39 +582,7 @@ body{
       vertical-align: middle;
     }
     
-    /* Last Update */
-    #notecard{
-        background-color: #FFACAC;
-        border: 1px solid #F1E5E5;
-        border-radius: 20px;
-        padding: 20px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    #notebanner{
-        color: #EAEAEA;
-        text-shadow: 1px 1px black;
-    }
-    .note{
-      margin-top: 15px;
-      text-align: center;
-      font-size: 15px; 
-      font-weight: 1000;
-      color: var(--cream);
-      font-weight: 700;
-      animation: onoff 1.5s normal infinite;
-    }
-    @keyframes onoff{
-      from{
-        color: '';
-      }
-      to{
-        color: red;
-      }
-    }
+
     #brand{
       height: 45px; 
       width: 45px;
