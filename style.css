@@ -17,6 +17,12 @@
     box-sizing: border-box;
     font-family: Hind Siliguri;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     min-height: 100vh;
     background: var(--cream);
@@ -338,6 +344,7 @@ body {
     }
     
     /* pdf button */
+    
     .pdf-btn{
       font-size: 15px;
       font-family: Hind Siliguri;
@@ -355,6 +362,30 @@ body {
     .pdf-btn:hover{
       border: 1px solid #D9D8E2;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    
+    .download-btn{
+        font-size: 15px;
+        font-family: Hind Siliguri;
+        background: transparent;
+        color:#23363b;
+        padding:10px 15px;
+        border-radius:15px;
+        text-decoration:none;
+        font-weight:500;
+        transition: 1s all ease;
+        border: 1px solid #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .download-btn:hover{
+        border: 1px solid #D9D8E2;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .download-img{
+        height: auto;
+        width: 15px;
     }
 
 
