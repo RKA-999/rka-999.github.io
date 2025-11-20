@@ -25,10 +25,13 @@ html {
 
 body {
     min-height: 100vh;
-    background: var(--cream);
-    background-size: cover;
-    background-position: center;
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    background-size: 300px;
+    background-repeat: repeat;
+    background-blend-mode: soft-light;
 }
+
 .header{
     position: fixed;
     top: 0px;
@@ -294,7 +297,8 @@ body {
     
     
     #alert {
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: -25px;
     text-align: center;
     width: 100%;
     padding: 10px 0;
@@ -302,30 +306,30 @@ body {
     font-weight: bold;
     color: black;
     background-color: white;
-    opacity: 0; 
-    transition: opacity 0.5s ease-in-out;
-    border: 1px solid #DEDEE9; /* update */
+    opacity: 1; 
+    border: 1px solid #DEDEE9;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 1s all ease ;
     border-radius: 20px;
-    transition: 1s all ease-in;
+    animation: flash 1.5s ease-in-out infinite;
 }
+
 #alert:hover{
-    transform: translateY(5px);
+    transform: translateY(10px);
 }
+
 #redalert{
     color: red;
 }
-@keyframes flash-fade {
-    0%, 100% {
-        opacity: 0;
+
+@keyframes flash {
+    0% {
+        opacity: 0; 
     }
-    50% {
+    
+    100% {
         opacity: 1;
     }
-}
-.flashing {
-    animation: flash-fade 2s ease-in-out infinite;
-    animation-iteration-count: 4;
 }
     
     
@@ -394,6 +398,7 @@ body {
       font-family: Hind Siliguri;
       background: transparent;
       color:#23363b;
+      background-color: white;
       padding: 10px 15px;
       border-radius: 15px;
       text-decoration: none;
@@ -687,9 +692,6 @@ b{
 
 :root{
      --cream: #f8f2ea;
-}
-body{
-    background-color: var(--cream);
 }
 .chart-container {
     width: 95%; 
