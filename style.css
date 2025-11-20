@@ -351,7 +351,7 @@ body {
         transition: .5s all ease;
     }
     #vdoarea:hover{
-        transform: scale(0.99);
+        transform: translateY(10px);
     }
     
     #vdo{
