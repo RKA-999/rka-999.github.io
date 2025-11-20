@@ -351,7 +351,7 @@ body {
         transition: 1s all ease;
     }
     #vdoarea:hover{
-        transform: translateY(10px);
+        transform: scale(0.97);
     }
     
     #vdo{
@@ -385,10 +385,11 @@ body {
     .pdf-btn-position{
       float: right;
       margin-bottom: 40px;
-      transition: 1s all ease;
+      transition: 0.5s all ease;
     }
     .pdf-btn-position:hover{
-        transform: translateY(-10px);
+        transform: scale(0.95);
+        border-radius: 25px;
     }
     
     /* pdf button */
@@ -408,6 +409,7 @@ body {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     }
     .pdf-btn:hover{
+      background: transparent;
       border: 1px solid #D9D8E2;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
