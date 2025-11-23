@@ -258,6 +258,36 @@ body {
     }
     
 
+
+
+
+#scrollUpButton{
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    z-index: 99;
+    border: 1.1px dotted var(--gold);
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#arrowimg{
+    width: 20px;
+    height: auto;
+    color: white;
+}
+
+
+
+
+
+
+
   /* Last Update */
     #notecard{
         background-color: #F9F4F4;
