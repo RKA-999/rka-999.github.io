@@ -264,22 +264,25 @@ body {
 #scrollUpButton{
     display: none;
     position: fixed;
-    bottom: 150px;
+    bottom: 100px;
     right: 20px;
     z-index: 99;
-    border: 1.1px dotted var(--gold);
     outline: none;
-    background: transparent;
+    background: rgba(255, 0, 0, 5);
     cursor: pointer;
-    padding: 10px;
+    padding: 2px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 0px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: .5s all ease-in;
 }
+#scrollUpButton:hover{
+    background: transparent;
+}
+
 #arrowimg{
-    width: 20px;
+    width: 40px;
     height: auto;
-    color: white;
 }
 
 
