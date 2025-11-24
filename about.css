@@ -188,6 +188,7 @@ body {
 #logo1{
     height: 40px;
     width: 40px;
+    transform: translateY(-10px);
     border-radius: 50px;
     animation-name: logo;
     animation-duration: 1s;
