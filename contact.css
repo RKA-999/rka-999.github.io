@@ -18,6 +18,10 @@
     font-family: Hind Siliguri;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background-image: url('bg.jpg');
@@ -254,7 +258,27 @@ body {
     }
     
     
+    /* scroll up button */
+    
+    #scrollUpButton {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+    z-index: 99;
+    outline: none;
+    background: rgba(255, 0, 0, 5);
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 40px;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
 
+#arrowimg {
+    width: 40px;
+    height: auto;
+}
 
 
 /* (Main Container) */
