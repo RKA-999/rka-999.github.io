@@ -475,8 +475,8 @@ body {
   
     .download-img{
         height: auto;
-        width: 20px;
-        transform: translateY(6px);
+        width: 16px;
+        transform: translateY(2.5px);
     }
 
 
