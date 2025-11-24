@@ -265,19 +265,15 @@ body {
     display: none;
     position: fixed;
     bottom: 100px;
-    right: 20px;
+    right: 10px;
     z-index: 99;
     outline: none;
     background: rgba(255, 0, 0, 5);
     cursor: pointer;
-    padding: 2px;
+    padding: 3px;
     border-radius: 50px;
-    font-size: 0px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: .5s all ease-in;
-}
-#scrollUpButton:hover{
-    background: transparent;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
 
 #arrowimg{
