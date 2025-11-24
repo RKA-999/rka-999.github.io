@@ -2,7 +2,7 @@
   "name": "অধিকারী জুয়েলার্স",
   "short_name": "অধিকারী জুয়েলার্স",
   "start_url": "index.html",
-  "display": "standalone",
+  "display": "fullscreen",
   "background_color": "#ffffff",
   "theme_color": "#0b1b22",
   "icons": [
