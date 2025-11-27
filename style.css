@@ -393,28 +393,7 @@ body {
     
     
     /* body 1st content */
-    .page {
-    height: 80px;
-    display: flex;
-    margin: 10px auto;
-    margin-top: 25px;
-    padding: 15px;
-    flex-direction: row;
-    justify-content: flex-start;
-    float: right;
-}
-
-
-@media (max-width: 980px) {
-    .page{
-        gap: 660px;
-        padding: 20px;
-    }
-@media (max-width:790px) {
-    .page{
-        gap: 95px;
-}
-}
+    
 
 .pdf-btn-position {
     
@@ -428,9 +407,39 @@ body {
 .pdf-btn {
     font-size: 15px;
     font-family: Hind Siliguri;
+.page{
+    height: 80px;
+    display: flex;
+    margin: 30px auto;
+    margin-top: 15px;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+@media (max-width: 980px) {
+    .page{
+        gap: 680px;
+    }
+@media (max-width: 790px) {
+    .page {
+        gap: 100px;
+}
+}   
+    .pdf-btn-position {
+    margin-top: 13.3px;
+    transition: 0.5s all ease;
+}
+.pdf-btn-position:hover {
+    transform: translateY(7px);
+}
+    
+.pdf-btn {
+    font-size: 15px;
+    font-family: Hind Siliguri;
     background-color: orange;
     color: #0B1B22; 
-    padding: 10px 15px;
+    padding: 11.2px 15px;
     border-radius: 15px;
     text-decoration: none;
     font-weight: 500;
