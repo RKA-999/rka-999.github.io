@@ -398,12 +398,10 @@ body {
     display: flex;
     margin: 10px auto;
     margin-top: 25px;
-    padding: 10px;
+    padding: 5px;
     flex-direction: row;
     justify-content: flex-start;
     float: right;
-    border: 0.2px dotted orange;
-    background: transparent;
 }
 
 
@@ -413,7 +411,7 @@ body {
     }
 @media (max-width:790px) {
     .page{
-        gap: 65px;
+        gap: 75px;
 }
 }
 
