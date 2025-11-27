@@ -393,20 +393,7 @@ body {
     
     
     /* body 1st content */
-    
 
-.pdf-btn-position {
-    
-    margin-top: 13.3px;
-    transition: 0.5s all ease;
-}
-.pdf-btn-position:hover {
-    transform: translateY(7px);
-}
-    
-.pdf-btn {
-    font-size: 15px;
-    font-family: Hind Siliguri;
 .page{
     height: 80px;
     display: flex;
@@ -425,14 +412,19 @@ body {
     .page {
         gap: 100px;
 }
-}   
-    .pdf-btn-position {
+}
+
+
+
+
+.pdf-btn-position {
     margin-top: 13.3px;
     transition: 0.5s all ease;
 }
 .pdf-btn-position:hover {
     transform: translateY(7px);
 }
+ 
     
 .pdf-btn {
     font-size: 15px;
