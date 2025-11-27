@@ -413,7 +413,7 @@ body {
     }
 @media (max-width:790px) {
     .page{
-        gap: 78px;
+        gap: 73px;
 }
 }
 
@@ -442,7 +442,7 @@ body {
 }
 
 .pdf-btn:hover {
-    color: navy;
+    color: #0B1B22;
     border: 0.1px solid navy; 
     box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
     
