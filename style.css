@@ -444,7 +444,7 @@ body {
 
 .pdf-btn:hover {
     white-space: nowrap;
-    color: #0B1B22;
+    color: white;
     border: 0.1px solid navy; 
     box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
     
@@ -484,6 +484,7 @@ body {
 
 .download-btn:hover {
     white-space: nowrap;
+    color: white;
     border: .1px solid #0B1B22;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
