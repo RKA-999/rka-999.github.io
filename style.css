@@ -268,16 +268,19 @@ body {
     right: 10px;
     z-index: 99;
     outline: none;
-    background: rgba(255, 0, 0, 5);
+    background: blue;
     cursor: pointer;
-    padding: 3px;
-    border-radius: 50px;
-    font-size: 20px;
+    padding: 1px;
+    border-radius: 10px;
+    font-size: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
-
+#scrollUpButton:hover{
+    background-color: black;
+}
 #arrowimg{
     width: 40px;
+    padding: 10px;
     height: auto;
 }
 
