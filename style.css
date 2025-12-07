@@ -431,9 +431,9 @@ body {
     
 .pdf-btn {
     white-space: nowrap;
-    font-size: 15px;
+    font-size: 15.5px;
     font-family: Hind Siliguri;
-    background-color: orange;
+    background-color: white;
     color: #0B1B22; 
     padding: 11.2px 15px;
     border-radius: 15px;
@@ -447,13 +447,13 @@ body {
 
 .pdf-btn:hover {
     white-space: nowrap;
-    color: white;
-    border: 0.1px solid navy; 
+    color: orange;
+    border: 0.1px dotted navy; 
     box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
     
 }
 #pdf-btn-view-logo {
-    width: 16.5px;
+    width: 22px;
     height: auto;
     margin-right: 5px;
     transform: translateY(0.1px);
@@ -470,9 +470,9 @@ body {
 
 .download-btn {
     white-space: nowrap;
-    font-size: 15px;
+    font-size: 15.5px;
     font-family: Hind Siliguri;
-    background: orange;
+    background: white;
     color: #0B1B22; 
     padding: 10px 20px;
     border-radius: 15px;
@@ -481,21 +481,20 @@ body {
     display: flex; 
     align-items: center;
     transition: 0.3s all ease;
-    border: 1px dotted orange;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
 }
 
 .download-btn:hover {
     white-space: nowrap;
-    color: white;
-    border: .1px solid #0B1B22;
+    color: orange;
+    border: .1px dashed #0B1B22;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     box-shadow: 0 10px 20px rgba(255, 140, 0, 0.5);
 }
 
 .download-img {
     height: auto;
-    width: 16px;
+    width: 30px;
     margin-right: 5px;
     transform: translateY(1px);
 }
