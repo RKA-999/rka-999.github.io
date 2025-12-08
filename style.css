@@ -1012,3 +1012,62 @@ text-align: center;
     margin-top: -20px;
     margin-bottom: 20px;
 }
+
+/* box rate */
+.old_doc{
+    height: 400px;
+    width: 98%;
+    margin: 0px auto;
+    margin-top: 30px;
+    justify-content: center;
+    display: flow-root;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: .5s all ease;
+}
+.old_doc:hover {
+    transform: scale(0.99);
+}
+.old_doc_head{
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+#old_doc_head_position{
+    width: 100%;
+    height: 40px;
+    background: rgba(17, 255, 248, 1);
+    border-radius: 1px;
+}
+
+
+#old_doc_body{
+    margin-top: -25.5px;
+    border: 1px solid black;
+    background: white;
+}
+#doc_h{
+    width: 100%;
+}
+.doc_content{
+    text-align: center;
+}
+.old_doc_body1 {
+    background: black;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.old_doc_body2 {
+    color: red;
+    text-decoration: none;
+}
+
+.pdf_1{
+    margin-top: 10px;
+    width: 30px;
+    height: auto;
+}
