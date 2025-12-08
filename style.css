@@ -506,6 +506,8 @@ body {
 body{
       font-family: Hind Siliguri;
 }
+
+/* Gold Rate Banner */
 .goldtable{
       margin-top: -7.5px; /* update */
       width: 100%;
@@ -519,10 +521,10 @@ body{
 }
 
 #golddown{
-    transition: 1s all ease;
+    transition: .2s all ease;
 }
 #golddown:hover{
-    transform: translateY(15px);
+    transform: scale(0.99);
 }
 
 .product1{
@@ -561,18 +563,38 @@ body{
       vertical-align: middle;
 }
 
-
-    /* Gold Rate Banner */
+        
     #goldbanner {
         margin-top: 15px;
-        align-items: center;
+        justify-content: center;
         height: auto;
         width: 100%;
-        border: 1px solid gold;
         border-radius: 20px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     }
+    #gb_img_position{
+        padding: 0px;
+        background: #0d2930;
+    }
+    #goldbanner1{
+        width: 100%;
+        height: auto;
+    }
+
+
+
 /* silver banner */
+
+#sb_img_position{
+        padding: 0px;
+        background: #0d2930;
+}
+    
+#silverbanner1{
+        width: 100%;
+        height: auto;
+}
+
 #silverbanner {
     margin-top: 50px;
     margin-bottom: 5px;
@@ -597,10 +619,11 @@ body{
 }
 
 #silverdown{
-    transition: 1s all ease;
+    margin-top: 80px;
+    transition: .2s all ease;
 }
 #silverdown:hover{
-    transform: translateY(15px);
+    transform: scale(0.99);
 }
 
 .product2{
