@@ -1024,6 +1024,7 @@ text-align: center;
 }
 .old_doc:hover {
     transform: scale(0.99);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0); /* update */
 }
 .old_doc_head{
     font-size: 22px;
@@ -1034,7 +1035,7 @@ text-align: center;
 #old_doc_head_position{
     width: 100%;
     height: 40px;
-    background: rgba(17, 255, 248, 1);
+    background: #21303a;
     border-radius: 1px;
 }
 
@@ -1066,4 +1067,17 @@ text-align: center;
     margin-top: 10px;
     width: 30px;
     height: auto;
+}
+.in_de{
+    width: 30px;
+    height: auto;
+    padding: 10px 0px;
+    border-radius: 50px;
+}
+.in_de_tdata{
+    display: flex;
+    justify-content: center;
+}
+#td_bg{
+    background: rgba(243, 243, 243, 1);
 }
