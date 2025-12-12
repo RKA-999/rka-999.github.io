@@ -243,7 +243,8 @@ body {
         height: 20px;
         display: flex;
         justify-content: right;
-        margin-right: -45px;
+        margin-right: -55px;
+        margin-bottom: 0px;
 }
     #number{
     font-family: Hind Siliguri;
