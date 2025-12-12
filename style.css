@@ -1081,3 +1081,6 @@ text-align: center;
 #td_bg{
     background: rgba(243, 243, 243, 1);
 }
+.in_de_tdata_text{
+    margin-top: 15px;
+}
