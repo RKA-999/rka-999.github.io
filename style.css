@@ -1084,3 +1084,7 @@ text-align: center;
 .in_de_tdata_text{
     margin-top: 15px;
 }
+.vcounter{
+    align-items: center;
+    bottom: 50px;
+}
