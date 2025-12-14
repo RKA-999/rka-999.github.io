@@ -17,6 +17,9 @@
     box-sizing: border-box;
     font-family: Hind Siliguri;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
     background-image: url('https://rka-999.github.io/storage/photos/bg.jpg');
@@ -222,31 +225,39 @@ body {
       width: 100%;
       background: linear-gradient(90deg, #0b1b22);
       color: var(--cream);
-      padding:16px;
-      display:flex;
-      align-items: center;
-      gap:14px;
-      border-bottom: 3px solid var(--accent);
+      padding: 16px;
+      display: flex;
+      justify-content: end;
+      border-bottom: 2px solid var(--accent);
     }
    .logo{
       height: auto;
       width: 100%;
       border-radius: 4px
     }
+    #hotline{
+        width: auto;
+        height: 20px;
+        display: flex;
+        justify-content: right;
+        margin-right: -45px;
+        margin-bottom: 0px;
+    }
     #number{
     font-family: Hind Siliguri;
     margin-top: 25px;
     text-align: right;
-    margin-left: 212px;
+    display: flex;
+    margin-left: auto;
     font-size: 15px;  /* update */
-    font-weight: 700; /* update */ 
+    font-weight: 700; /* update */
     text-decoration: none;
     color: white;
     text-align: right;
     transition: .5s .5s all ease-in;
     }
     #number:hover{
-      font-size: 15.5px;
+      font-size: 14.8px;
       transition: 2s all ease-in;
       color: var(--gold);
     }
