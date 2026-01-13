@@ -42,7 +42,9 @@ function createSilverChart(labels, data) {
 
 
 
-var scrollButton = document.getElementById("scrollUpButton");
+     // scroll up button
+     
+    var scrollButton = document.getElementById("scrollUpButton");
 
 
     window.onscroll = function() {scrollFunction()};
@@ -60,6 +62,8 @@ var scrollButton = document.getElementById("scrollUpButton");
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+
 // PWA অটো-রিফ্রেশ
 window.addEventListener('load', function() {
     if (!sessionStorage.getItem('pwa_auto_reloaded')) {
