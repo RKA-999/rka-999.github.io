@@ -792,6 +792,7 @@ b{
     #menu {
     display: none;
     }
+    /*
     #vdoarea{
         width: 50%;
         height: auto;
@@ -807,6 +808,50 @@ b{
         height: auto;
         border-radius: 20px;
         
+    }
+    */
+    nav{
+    background: var(--table-head);
+    height: 100px;
+    position: relative;
+    display: flex;
+    border-radius: 5px;
+    }
+    .desktop_bg{
+    background: var(--deep);
+    border: 0.1px solid #DDDDDD;
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    }
+    #desktop_bg_selected{
+    background: rgba(79, 93, 244, 4);
+    ;
+    border: 0.1px solid black;
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    
+    }
+    #desktop_bg_selected:active{
+    background: blue;
+    border: 0.1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+    .desktop_bg:active{
+        background: blue;
+        border: 0.1px solid black;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    .banner_area{
+        margin: auto;
+        height: 400px;
+        width: 77%;
+        margin-top: 50px;
+        margin-bottom: 300px;
     }
     .download-btn{
         font-size: 25px;
