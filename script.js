@@ -1,48 +1,4 @@
-function createSilverChart(labels, data) {
-    const ctxSilver = document.getElementById('silverPriceChart').getContext('2d');
-    new Chart(ctxSilver, {
-      type: 'line',
-      data: {
-        labels: labels,
-        datasets: [{
-          label: ' ২২ ক্যাঃ রূপার মূল্য বৃদ্ধি (টাকা)',
-          data: data,
-          borderColor: 'rgba(158, 158, 158, 1)', // Silver Color
-          backgroundColor: 'rgba(158, 158, 158, 0.4)',
-          fill: true,
-          tension: 0.2
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-          min: 1000,
-          max: 6000,
-            title: { display: true, text: 'মূল্য (টাকা/ভরি)' }
-          },
-          x: {
-            ticks: {
-              autoSkip: true,
-              maxTicksLimit: 7
-            }
-          }
-        }
-      }
-    });
-  }
-  
-});
-
-
-
-
-
-
-
-
-     // scroll up button
+    // scroll up button
      
     var scrollButton = document.getElementById("scrollUpButton");
 
