@@ -204,8 +204,8 @@ body {
     border-radius: 10px;
 }
 #logo1{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
 }
     /*
     animation-name: logo;
@@ -263,7 +263,7 @@ body {
     transition: .5s .5s all ease-in;
     }
     #number:hover{
-      font-size: 14.8px;
+      font-size: 15px;
       transition: 2s all ease-in;
       color: var(--gold);
     }
