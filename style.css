@@ -76,9 +76,10 @@ body {
     display: inline-block;
 }
 #name{
-    margin-top: 20px;
+    white-space: nowrap;
+    margin-top: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-family: Hind Siliguri;
     font-weight: 1000;
 }
