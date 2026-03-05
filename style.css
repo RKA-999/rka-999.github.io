@@ -37,7 +37,7 @@ body {
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 140px; /*999*/
+    height: 105px; /*new*/
     padding: 1.3rem 10%;
    /* background-color: rgba(0, 0, 0, .1);
     backdrop-filter: blur(50px); */
@@ -74,6 +74,7 @@ body {
 }
 #homelogo{
     display: inline-block;
+    margin-left: -8px; /*new*/
 }
 #name{
     white-space: nowrap;
@@ -86,15 +87,15 @@ body {
 /* update */
 #menu{
     color: white;
-    margin-right: 2.9%;
-    margin-top: -90px;
+    margin-right: 12px; /*new*/
+    margin-top: -65px;
     font-family: Hind Siliguri;
-    font-size: 25px;
+    font-size: 24px; /*new*/
     font-weight: 900;
 }
 
 .logo{
-     margin-top: -35px
+     margin-top: -35px;
      margin-left: 0px;
      font-size: 2rem;
      color: white;
@@ -206,7 +207,7 @@ body {
 }
 #logo1{
     height: auto;
-    width: 100%;
+    width: 310px; /*new*/
 }
     /*
     animation-name: logo;
@@ -227,7 +228,7 @@ body {
 
     /* Header */
     #header{
-      margin-top: 110px;
+      margin-top: 50px; /*new*/
       width: 100%;
       height: 90px;
       background: black;
@@ -796,7 +797,7 @@ b{
     #menu {
     display: none;
     }
-    
+    /*
     #vdoarea{
         width: 50%;
         height: auto;
@@ -812,47 +813,93 @@ b{
         height: auto;
         border-radius: 20px;
         }
-    
+    */
     nav{
     background: var(--table-head);
-    height: 100px;
+    height: 60px;
+    width: 100%;
+    top: -10px;
+    right: 15px;
     position: relative;
     display: flex;
     border-radius: 5px;
-    }
-    
-    .desktop_bg{
-    background: var(--deep);
-    border: 0.1px solid #DDDDDD;
-    padding: 10px 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-left: 20px;
     }
     
     #desktop_bg_selected{
     background: rgba(79, 93, 244, 4);
     ;
     border: 0.1px solid black;
-    padding: 10px 20px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    padding: 20px 20px;
     border-radius: 5px;
+    margin-left: -1px;
     }
     
     #desktop_bg_selected:active{
     background: blue;
     border: 0.1px solid black;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    }
+    #desktop_bg{
+    background: var(--deep);
+    border: 0.1px solid #DDDDDD;
+    padding: 20px 20px;
     border-radius: 5px;
     }
     
-    .desktop_bg:active{
+    #desktop_bg:active{
         background: blue;
         border: 0.1px solid black;
-        padding: 10px 20px;
+        padding: 20px 20px;
         border-radius: 5px;
     }
-
+    
+    #desktop_bg1{
+    background: var(--deep);
+    border: 0.1px solid #DDDDDD;
+    padding: 5px 20px;
+    border-radius: 5px;
+    
+    }
+    
+    #desktop_bg1:active {
+    background: blue;
+    border: 0.1px solid black;
+    padding: 20px 20px;
+    border-radius: 5px;
+    }
+    
+     #homelogo{
+        width: 100%;
+        margin-left: -25px;
+    }
+    .navbar{
+        width: 100%;
+        height: 80px;
+    }
+    #logo1{
+        height: auto;
+        width: 320px;
+    }
+    #header{
+        margin-top: 60px;
+        height: 110px;
+        width: 100%;
+    }
+    #hotline{
+        margin-top: 4.5px;
+        margin-right: -58px;
+    }
+    #number{
+        font-size: 20px;
+    }
+    #notebanner{
+        font-size: 25px;
+    }
+    .ntb{
+        font-size: 20px;
+    }
     .banner_area{
         margin: auto;
         height: 400px;
@@ -1081,14 +1128,21 @@ text-align: center;
     background-color: #333;
 }
 
-/* ---------------------------------- */
-/* যোগাযোগের তথ্য স্টাইল        */
-/* ---------------------------------- */
+.contact-info{
+    width: 100%;
+    display: inline-block;
+}
 .contact-info p {
     margin: 5px 0;
     font-size: 0.95rem;
+    white-space: nowrap;
 }
-
+#ci-m{
+    display: flex;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+}
 .contact-info .privacy-policy {
     color: #fff;
     text-decoration: none;
