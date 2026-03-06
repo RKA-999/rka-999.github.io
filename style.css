@@ -360,7 +360,7 @@ body {
 }
 
 #alert:hover{
-    transform: translateY(10px);
+    transform: translateY(-10px);
 }
 
 #redalert{
@@ -671,6 +671,68 @@ body{
       vertical-align: middle;
     }
     
+    
+    /* box rate */
+.old_doc{
+    height: auto;
+    width: 98%;
+    margin: 0px auto;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    justify-content: center;
+    display: flow-root;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    transition: .5s all ease;
+}
+.old_doc:hover {
+    transform: scale(0.99);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0); /* update */
+}
+.old_doc_head{
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+#old_doc_head_position{
+    width: 100%;
+    height: 40px;
+    background: #21303a;
+    border-radius: 1px;
+}
+
+
+#old_doc_body{
+    margin-top: -25.5px;
+    border: 1px solid black;
+    background: white;
+}
+#doc_h{
+    width: 100%;
+}
+.doc_content{
+    text-align: center;
+}
+.old_doc_body1 {
+    background: black;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.old_doc_body2 {
+    color: red;
+    text-decoration: none;
+}
+
+.pdf_1{
+    margin-top: 10px;
+    width: 30px;
+    height: auto;
+}
+    
 
     #brand{
       height: 45px; 
@@ -780,7 +842,7 @@ b{
 }
 .chart-container {
     width: 95%; 
-    height: 400px; /* এই মানটি এখন পরিবর্তন করতে হবে */
+    height: 400px;
     margin: 0 auto;
 }
 .chart-container {
@@ -902,14 +964,21 @@ b{
     .ntb{
         font-size: 20px;
     }
+    #alert{
+        font-size: 25px;
+    }
     .banner_area{
         margin: auto;
-        height: 400px;
-        width: 77%;
+        height: auto;
+        width: 650px;
         margin-top: 50px;
         margin-bottom: 300px;
     }
-    
+    .page{
+        margin-top: -300px;
+        width: 100%;
+        height: auto;
+    }
     .download-btn{
         font-size: 25px;
     }
@@ -928,12 +997,39 @@ b{
         width: 30px;
     }
     #goldbanner1{
-        width: 100%;
-        height: 75px;
+        width: 650px;
+        height: auto;
     }
     #silverbanner1{
-        width: 100%;
-        height: 75px;
+        width: 650px;
+        height: auto;
+    }
+    .goldtable th{
+        font-size: 25px;
+    }
+    .goldtable td{
+        font-size: 20px;
+    }
+    .silvertable th{
+        font-size: 25px;
+    }
+    .silvertable td{
+        font-size: 20px;
+    }
+    .old_doc{
+        font-size: 25px;
+    }
+    .old_doc_head{
+        font-size: 25px;
+    }
+    #old_doc_body{
+        margin-top: -40px;
+    }
+    .doc_content{
+        font-size: 20px;
+    }
+    .old_doc:hover {transform: translateY(-1px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0); /* update */
     }
     .footer-header{
         width: 40%;
@@ -1177,66 +1273,7 @@ text-align: center;
     margin-bottom: 20px;
 }
 
-/* box rate */
-.old_doc{
-    height: auto;
-    width: 98%;
-    margin: 0px auto;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    justify-content: center;
-    display: flow-root;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
-    transition: .5s all ease;
-}
-.old_doc:hover {
-    transform: scale(0.99);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0); /* update */
-}
-.old_doc_head{
-    font-size: 22px;
-    font-weight: 900;
-    text-align: center;
-    color: white;
-}
-#old_doc_head_position{
-    width: 100%;
-    height: 40px;
-    background: #21303a;
-    border-radius: 1px;
-}
 
-
-#old_doc_body{
-    margin-top: -25.5px;
-    border: 1px solid black;
-    background: white;
-}
-#doc_h{
-    width: 100%;
-}
-.doc_content{
-    text-align: center;
-}
-.old_doc_body1 {
-    background: black;
-    color: white;
-    font-weight: 400;
-    font-size: 15px;
-}
-
-.old_doc_body2 {
-    color: red;
-    text-decoration: none;
-}
-
-.pdf_1{
-    margin-top: 10px;
-    width: 30px;
-    height: auto;
-}
 .in_de{
     width: 30px;
     height: auto;
