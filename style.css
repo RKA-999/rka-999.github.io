@@ -855,11 +855,217 @@ b{
     margin: 0 auto;
 }
 .chart-container {
-    /* ছোট স্ক্রিনের জন্য ডিফল্ট উচ্চতা */
     width: 95%;
     height: 450px;
     margin: 0 auto;
 }
+
+.social-links{
+    display: block;
+}
+.bajus-footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: #fff; /* সাদা টেক্সট */
+    padding: 40px 20px;
+    border-radius: 5px;
+    font-family: Hind Siliguri;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#fname{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--gold);
+}
+#fname1{
+    font-size: 15px;
+    font-weight: 200;
+    color: #C3C5D5;
+}
+.footer-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: auto;
+    margin-top: -15px;
+    border-radius: 50px;
+}
+.bajusfooter{
+    margin-top: -20px;
+    width: 100%;
+    height: auto;
+}
+
+ .app-download-section{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+ }
+
+.association-names h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.association-names p {
+    font-size: 1rem;
+    margin: 0;
+    color: #f1c40f;
+}
+
+
+.social-links {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footerlogo{
+    height: auto;
+    width: 30px;
+}
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f1c40f;
+}
+
+.app-download-section {
+    gap: 15px;
+    margin: 30px 0;
+    width: 150px;
+}
+
+
+#footerb{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.app-store-button, .google-play-button {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    border: 1px solid #fff;
+}
+
+.app-store-button i, .google-play-button i {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+
+.button-text {
+    text-align: center;
+    line-height: 1.2;
+    display: block;
+    font-size: 0.7rem;
+    opacity: 0.8;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.app-store-button:hover, .google-play-button:hover {
+    background-color: #333;
+}
+
+.contact-info{
+    width: 100%;
+    display: inline-block;
+}
+.contact-info p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+#ci-m{
+    display: flex;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+}
+.contact-info .privacy-policy {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-top: 10px;
+    display: inline-block;
+    opacity: 0.8;
+}
+
+.contact-info .privacy-policy:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background-color: #333; /* হালকা বিভাজক রেখা */
+    margin: 30px auto;
+    width: 80%;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+
+.in_de{
+    width: 30px;
+    height: auto;
+    padding: 10px 0px;
+    border-radius: 50px;
+}
+.in_de_tdata{
+    display: flex;
+    justify-content: center;
+}
+#td_bg{
+    background: rgba(243, 243, 243, 1);
+}
+.in_de_tdata_text{
+    margin-top: 15px;
+}
+.vcounter{
+    align-items: center;
+    bottom: 50px;
+}
+
+
 
 @media (min-width: 768px) {
     .chart-container {
@@ -950,12 +1156,13 @@ b{
         height: 80px;
     }
     #logo1{
+        margin-left: 40px;
         height: auto;
-        width: 50px;
+        width: 60px;
     }
     #logo2 {
     height: auto;
-    width: 250px;
+    width: 270px;
     }
     .header{
         width: 100%;
@@ -1057,24 +1264,62 @@ b{
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0); /* update */
     }
     .timebox{
-        width: 270px;
+        width: 450px;
+    }
+    #time{
+        color: red;
+        font-size: 25px;
+    }
+    #timebanner{
+        font-size: 25px;
+    }
+    .bajusfooter{
+        width: 600px;
+        height: auto;
+    }
+    #ci-m{
+        font-size: 25px;
+        margin-left: -70px;
+    }
+    #ci-m1 {
+    font-size: 25px;
+    margin-left: -59.5px;
+    }
+    #ci-m2 {
+    font-size: 25px;
+    margin-left: -20px;
+    }
+    #ci-m3 {
+    font-size: 20px;
+    margin-left: -40px;
+    }
+    #ci-m4{
+        font-size: 20px;
+        margin-left: -20px;
+    }
+    .ticker{
+        font-size: 25px;
     }
     .footer-header{
-        width: 40%;
-        height: 20px;
+        width: 500px;
+        height: auto;
         display: flex;
         justify-content: center;
         margin: auto;
     }
+    .copyright{
+        font-size: 20px;
+    }
 }
+/*
 #goldgraph{
     width: 100%;
     margin-top: 50px;
     background-color: rgba(248, 246, 246, 1);
     border-radius: 20px;
     box-shadow: #666363;
-    border: 1px solid #DEDEE9; /* update */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #DEDEE9;*/ /* update */
+  /*  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 1s all ease;
 }
 
@@ -1089,7 +1334,7 @@ b{
     border-radius: 20px;
     box-shadow: #666363;
     border: 1px solid #DEDEE9; /* update */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+/*    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: 1s all ease;
     margin-bottom: 50px;
 }
@@ -1097,228 +1342,4 @@ b{
     transform: translateY(10px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.social-links{
-    display: block;
-}
-.bajus-footer {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: auto;
-    width: 100%;
-    background-color: #202832;
-    color: #fff; /* সাদা টেক্সট */
-    padding: 40px 20px;
-    border-radius: 5px;
-    font-family: Hind Siliguri;
-    text-align: center;
-}
-
-.footer-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-#fname{
-    font-size: 25px;
-    font-weight: 800;
-    color: var(--gold);
-}
-#fname1{
-    font-size: 15px;
-    font-weight: 200;
-    color: #C3C5D5;
-}
-.footer-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.footer-logo {
-    width: 80px;
-    height: auto;
-    margin-top: -15px;
-    border-radius: 50px;
-}
-.bajusfooter{
-    margin-top: -20px;
-    width: 100%;
-    height: auto;
-}
-
- .app-download-section{
-     width: 100%;
-     height: auto;
-     display: flex;
-     flex-direction: column;
- }
-
-.association-names h1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.association-names p {
-    font-size: 1rem;
-    margin: 0;
-    color: #f1c40f; /* বাংলায় নামটির জন্য হালকা সোনালী রঙ ব্যবহার করা হয়েছে */
-}
-
-/* ---------------------------------- */
-/* সোশ্যাল লিংক স্টাইল          */
-/* ---------------------------------- */
-.social-links {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-.footerlogo{
-    height: auto;
-    width: 30px;
-}
-.social-links a {
-    color: #fff;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #f1c40f; /* হোভারে সোনালী রঙ */
-}
-
-.app-download-section {
-    gap: 15px;
-    margin: 30px 0;
-    width: 150px;
-}
-
-
-#footerb{
-    display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
-
-.app-store-button, .google-play-button {
-    display: flex;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-    border: 1px solid #fff;
-}
-
-.app-store-button i, .google-play-button i {
-    font-size: 2rem;
-    margin-right: 10px;
-}
-
-
-.button-text {
-    text-align: center;
-    line-height: 1.2;
-    display: block;
-    font-size: 0.7rem;
-    opacity: 0.8;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.app-store-button:hover, .google-play-button:hover {
-    background-color: #333;
-}
-
-.contact-info{
-    width: 100%;
-    display: inline-block;
-}
-.contact-info p {
-    margin: 5px 0;
-    font-size: 0.95rem;
-    white-space: nowrap;
-}
-#ci-m{
-    display: flex;
-    text-align: center;
-    text-align: center;
-    align-items: center;
-}
-.contact-info .privacy-policy {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    margin-top: 10px;
-    display: inline-block;
-    opacity: 0.8;
-}
-
-.contact-info .privacy-policy:hover {
-    text-decoration: underline;
-    opacity: 1;
-}
-
-/* ---------------------------------- */
-/* কপিরাইট স্টাইল               */
-/* ---------------------------------- */
-.footer-divider {
-    border: 0;
-    height: 1px;
-    background-color: #333; /* হালকা বিভাজক রেখা */
-    margin: 30px auto;
-    width: 80%;
-}
-
-.copyright {
-    font-size: 0.8rem;
-    opacity: 0.7;
-    margin-top: -20px;
-    margin-bottom: 20px;
-}
-
-
-.in_de{
-    width: 30px;
-    height: auto;
-    padding: 10px 0px;
-    border-radius: 50px;
-}
-.in_de_tdata{
-    display: flex;
-    justify-content: center;
-}
-#td_bg{
-    background: rgba(243, 243, 243, 1);
-}
-.in_de_tdata_text{
-    margin-top: 15px;
-}
-.vcounter{
-    align-items: center;
-    bottom: 50px;
-}
+*/
