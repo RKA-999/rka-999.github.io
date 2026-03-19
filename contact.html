@@ -1,96 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>অধিকারী জুয়েলার্স-- দৈনিক বাজারদর</title>
-  <link rel="icon" type="image/png" href="icon-512x512.png">
+  <title></title>
   <link rel="stylesheet" href="contact.css">
-  <link rel="manifest" href="manifest.json">
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility" />
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download"/>
 </head>
 <body>
-  <!-- Please select desktop mode and rotate your screen -->
-  <header class="header">
-    <div id="homelogo">
-      <p id="name">অধিকারী<br>জুয়েলার্স</p>
-<a href="index.html" class="logo"><img src="https://i.postimg.cc/rsYqMRfZ/logo.png" alt="logo" id="logo1"></a>
-    </div>
-    
-    <p id="menu">মেনু</p> <!-- uodate -->
-    <input type="checkbox" id="check">
-    
-    <label for="check" class="icons">
-     <i class="bx bx-menu-wider" id="menu-icon"></i>
-     <i class='bxr  bx-x' id="close-icon"></i> 
-    </label>
-  
+   <div class="top-logo">
+     <a href="contact.html">
+       <img src="https://rka-999.github.io/storage/photos/logo.jpg" alt="logo" id="top-logo">
+     </a>
+   </div>
+   
+
+    <!-- Bottom Navbar-->
   <nav class="navbar">
-    <a href="index.html" style="--i:0;">হোম</a>
-    <a href="about.html" style="--i:1;">সম্পর্কে</a>
-    <a href="gallery.html" style="--i:2;">গ্যালারি</a>
-    <a href="internationalgoldprice.html" style="--i:3;">বৈদেশিক স্বর্ণের মূল্য</a>
-    <a href="contact" style="--i:4;">যোগাযোগ করুন</a>
-  </nav>
-  </header>
-  
-  
-  
-  
-  
-  
-    <!-- Header -->
-      <header id="header">
-      <a href="tel:01939466248" id="number"><img src="https://rka-999.github.io/storage/photos/hotline.png" alt="hotline.png" id="hotline">হটলাইন:<br>০১৯৩৯৪৬৬২৪৮</a>
-      </header>
+  <div class="nav-item">
+       <a href="index.html">
+       <i class="fa-solid fa-house"></i>
+        <span>হোম</span></a>
+  </div>
+  <div class="nav-item">
+      <a href="history.html">
+      <i class="fa-solid fa-clock-rotate-left"></i>
+      <span>সর্বশেষ</span></a>
+  </div>
+  <div class="nav-item">
+      <a href="news.html">
+    <i class="fa-solid fa-newspaper"></i>
+      <span>নিউজ</span></a>
+  </div>
+  <div class="nav-item">
+     <a href="international.html">
+     <i class="fa-solid fa-globe"></i>
+     <span>আন্তর্জাতিক</span></a>
+    </div>
+  </div>
+  <div class="nav-item active">
+     <a href="contact.html">
+       <i class="fa-sharp fa-solid fa-phone-volume"></i>
+      <span>যোগাযোগ</span></a>
+  </div>
+</nav>
+<script src="script.js"></script>
 
-<!-- body -->
-  <!-- scroll up button script button on bottom position-->
-     
-  <a id="scrollUpButton" href="#top"><img src="https://i.postimg.cc/hvz0zT3D/scroll-to-top.png" alt="arrow" id="arrowimg"></a>
-  
-<div class="contact-container">
-  
-  <div class="contact-card whatsapp">
-    <h3 class="card-title">আমাদের সাথে চ্যাট অথবা কল করুন</h3>
+
+<!-- Content -->
+
+
+    <!-- WhatsApp -->
+    <div class="card_position">
+    <div class="contact-container">
+      <div class="contact-card whatsapp">
+        <h3 class="card-title">হোয়াটসঅ্যাপ করুন</h3>
+        <div class="icon-wrapper">
+          <img src="https://i.postimg.cc/NFL56cV1/whatsapp.png" alt="WhatsApp Icon" class="card-icon-Wh">
+        </div>
+        <p class="card-description">যেকোনো প্রয়োজনে মেসেজ অথবা কল করুন আমাদের হোয়াটসঅ্যাপ নম্বরে</p>
+        <a href="whatsapp://send?phone=+8801817538878" class="action-button">মেসেজ পাঠান</a>
+      </div>
+      
+
+      
+      <div class="contact-card email">
+        <h3 class="card-title">ইমেইল করুন</h3>
+        <div class="icon-wrapper">
+          <img src="https://i.postimg.cc/B6n633qs/gmail.png" alt="Email Icon" class="card-icon-G">
+        </div>
+        <p class="card-description">বিস্তারিত জিজ্ঞাসা বা দাপ্তরিক যোগাযোগের জন্য ইমেইল করুন</p>
+        <a href="mailto: info@bajus.org" class="action-button">ইমেইল করুন</a>
+      </div>
+      
+      <div class="contact-card website">
+        <h3 class="card-title"> ওয়েবসাইট ভিজিট করুন</h3>
+        <div class="icon-wrapper">
+          <img src="https://i.postimg.cc/xC807PRH/website.png" alt="Website Icon" class="card-icon-Web">
+        </div>
+        <p class="card-description">যেকোনো তথ্য সংগ্রহে ভিজিট করুন আমাদের অফিসিয়াল ওয়েবসাইট</p>
+        <a href="https://bajus.org/" target="_blank" class="action-button">ভিজিট করুন</a>
+      </div>
+      
+      <div class="contact-card location">
+        <h3 class="card-title">হটলাইনে কল করুন</h3>
+        <div class="icon-wrapper">
+          <img src="support.png" class="card-icon-L">
+        </div>
+        <p class="card-description">যেকোনো প্রয়োজনে সরাসরি কল করুন আমাদের হটলাইন নম্বরে</p>
+        <a href="tel:+880241031722" class="action-button">কল করুন</a>
+      </div>
+
+    <div class="contact-card hotline">
+    <h3 class="card-title">আমাদের লোকেশন</h3>
     <div class="icon-wrapper">
-      <img src="https://i.postimg.cc/NFL56cV1/whatsapp.png" alt="WhatsApp Icon" class="card-icon">
-    </div>
-    <p class="card-description">সহজে যোগাযোগের জন্য যেকোনো সময় আমাদের হোয়াটসঅ্যাপ নম্বরে মেসেজ অথবা কল করুন।</p>
-    <a href="whatsapp://send?phone=+8801323168482" class="action-button">মেসেজ পাঠান</a>
+    <img src="https://i.postimg.cc/Vkz5gn31/map.png" alt="Location Icon" alt="Location Icon" class="card-icon-L">
   </div>
-  
-  <div class="contact-card email">
-    <h3 class="card-title">ইমেইল করুন</h3>
-    <div class="icon-wrapper">
-      <img src="https://i.postimg.cc/B6n633qs/gmail.png" alt="Email Icon" class="card-icon">
+  <p class="card-description">আমাদের ঠিকানা</p>
+  <a href="https://maps.app.goo.gl/n9hVXddjUDqNA96H9" class="action-button">ঠিকানা দেখুন</a>
     </div>
-    <p class="card-description">বিস্তারিত জিজ্ঞাসা বা দাপ্তরিক যোগাযোগের জন্য ইমেইল ব্যবহার করুন।</p>
-    <a href="mailto: rahit161369853775@gmail.com" class="action-button">ইমেইল করুন</a>
-  </div>
-  
-  <div class="contact-card website">
-    <h3 class="card-title">আমাদের ওয়েবসাইট ভিজিট করুন</h3>
-    <div class="icon-wrapper">
-      <img src="https://i.postimg.cc/xC807PRH/website.png" alt="Website Icon" class="card-icon">
     </div>
-    <p class="card-description">আমাদের অফিসিয়াল ওয়েবসাইটে যান।</p>
-    <a href="https://rka-999.github.io/" target="_blank" class="action-button">ভিজিট করুন</a>
-  </div>
-  
-  <div class="contact-card location">
-    <h3 class="card-title">স্টোরের অবস্থান দেখুন</h3>
-    <div class="icon-wrapper">
-      <img src="https://i.postimg.cc/Vkz5gn31/map.png" alt="Location Icon" class="card-icon">
-    </div>
-    <p class="card-description">আমাদের স্টোরে সরাসরি আসতে বা ঠিকানা জানতে গুগল ম্যাপে দেখুন।</p>
-    <a href="https://goo.gl/maps/i5DudCKZjXs3ZLXU6" target="_blank" class="action-button">মানচিত্রে দেখুন</a>
-  </div>
-  
+</div>  
 </div>
+      
 
-    <!-- scroll to top need to stay on bottom-->
-  <script src="script.js"></script>
+
+
+
+
+
 </body>
 </html>
