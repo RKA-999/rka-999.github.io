@@ -288,12 +288,19 @@ window.addEventListener('load', function() {
 
 
 
-// --- সাধারণ PWA ইনস্টল প্রম্পট ---
+// ১. সার্ভিস ওয়ার্কার রেজিস্টার করা (ক্রোমকে সন্তুষ্ট করতে)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('Service Worker Registered!'))
+      .catch(err => console.log('SW registration failed:', err));
+  });
+}
 
 let deferredPrompt;
-const LOGO_URL = 'icon-512x512.png'; // আপনার লোগো ফাইলের নাম এখানে দিন
+const LOGO_URL = 'icon-512x512.png'; // আপনার লোগোর নাম
 
-// ১. ডাইনামিক্যালি সাধারণ পপআপ তৈরি করা (HTML ও CSS আলাদা ফাইলে হাত দিতে হবে না)
+// ২. সাধারণ পপআপ এর HTML তৈরি
 const simplePopupHtml = `
   <div id="simple-pwa-popup" style="display: none; position: fixed; top: -80px; left: 0; width: 100%; background: #fff; color: #000; padding: 10px 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 99999; transition: top 0.4s ease-in-out; border-bottom: 1px solid #ddd; font-family: sans-serif; box-sizing: border-box;">
     <div style="display: flex; align-items: center; justify-content: space-between; max-width: 600px; margin: 0 auto;">
@@ -309,59 +316,53 @@ const simplePopupHtml = `
   </div>
 `;
 
-// বডির শুরুতে পপআপটি যুক্ত করা
 document.body.insertAdjacentHTML('afterbegin', simplePopupHtml);
 
-// ২. ব্রাউজারের ডিফল্ট প্রম্পট আটকে দেওয়া এবং আমাদের পপআপ দেখানো
+// ৩. ব্রাউজারের ইনস্টল সিগন্যাল ধরা
 window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault(); // ডিফল্ট পপআপ আটকানো
+  e.preventDefault(); 
   deferredPrompt = e;
-  
-  // পেজ লোড হওয়ার ৩ সেকেন্ড (৩০০০ মিলি সেকেন্ড) পর পপআপ দেখানো
-  setTimeout(() => {
-    const popup = document.getElementById('simple-pwa-popup');
-    if (popup) {
-      popup.style.display = 'block';
-      setTimeout(() => {
-        popup.style.top = '0px'; // স্লাইড হয়ে নেমে আসবে
-      }, 10);
-    }
-  }, 3000);
 });
 
-// ৩. ইনস্টল বাটনের কাজ
-document.getElementById('simple-install-btn').addEventListener('click', async () => {
+// ৪. ৩ সেকেন্ড পর পপআপ দেখানো
+setTimeout(() => {
   const popup = document.getElementById('simple-pwa-popup');
+  if (popup) {
+    popup.style.display = 'block';
+    setTimeout(() => {
+      popup.style.top = '0px'; 
+    }, 10);
+  }
+}, 3000); 
+
+// ৫. ইনস্টল বাটনের কাজ
+document.getElementById('simple-install-btn').addEventListener('click', async () => {
   if (deferredPrompt) {
-    // ব্রাউজারের আসল ইনস্টল ডায়ালগ দেখানো
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
-    console.log(`User response to the install prompt: ${outcome}`);
-    deferredPrompt = null; // প্রম্পট একবার ব্যবহার হলে নাল করে দেওয়া
+    deferredPrompt = null; 
     hideSimplePopup();
   } else {
-    // যদি কোনো কারণে প্রম্পট না থাকে, তবে ব্যবহারকারীকে ম্যানুয়ালি ইনস্টল করতে বলা
-    alert('অনুগ্রহ করে ব্রাউজার মেনু থেকে "Add to Home Screen" অপশনটি ব্যবহার করুন।');
+    // যদি সার্ভিস ওয়ার্কার লোড হতে সামান্য দেরি হয়
+    alert('ইনস্টল করতে ব্রাউজারের উপরে ডানে ৩টি ডট (Menu) আইকনে ক্লিক করে "Install app" বা "Add to Home Screen" এ চাপ দিন।');
+    hideSimplePopup();
   }
 });
 
-// ৪. ক্লোজ বাটনের কাজ
+// ৬. ক্লোজ বাটনের কাজ
 document.getElementById('simple-close-btn').addEventListener('click', () => {
   hideSimplePopup();
 });
 
-// পপআপ লুকানোর ফাংশন
 function hideSimplePopup() {
   const popup = document.getElementById('simple-pwa-popup');
   if (popup) {
-    popup.style.top = '-80px'; // ওপরে উঠে লুকিয়ে যাবে
+    popup.style.top = '-80px'; 
     setTimeout(() => {
       popup.style.display = 'none';
     }, 400);
   }
 }
-
-
 
 
 
