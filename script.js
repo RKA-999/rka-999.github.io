@@ -143,10 +143,10 @@ function toggleLanguage() {
   if (lastUpdatePs.length >= 2) {
     let dateText = lastUpdatePs[0].innerText;
     let timeText = lastUpdatePs[1].innerText;
-    // 2 change area
+    // 2 change area সকাল সন্ধ্যা দুপুর & AM PM
     if (currentLang === 'en') {
       dateText = dateText.replace('তারিখ:', 'Date:').replace('মার্চ', 'March');
-      timeText = timeText.replace('সময়:', 'Time:').replace('দুপুর', '').replace('ঘটিকা', "PM");
+      timeText = timeText.replace('সময়:', 'Time:').replace('সন্ধ্যা', '').replace('ঘটিকা', "PM");
     } else {
       dateText = dateText.replace('Date:', 'তারিখ:').replace('March', 'মার্চ');
       timeText = timeText.replace('Time:', 'সময়:').replace('Morning', 'সকাল').replace("o'clock", 'ঘটিকা');
