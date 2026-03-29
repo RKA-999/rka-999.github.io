@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 html{
       scroll-behavior: smooth;
-      overscroll-behavior: none;
 }
 body{
       overscroll-behavior: none;
@@ -19,7 +18,7 @@ body{
       align-items: center;
       height: 52px;
       align-items: center;
-      margin-top: -76.9px;
+      margin-top: -52px;
       position: fixed;
       z-index: 999;
       left: 0;
@@ -32,20 +31,20 @@ body{
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 5);
 }
 
-
-.top-logo-test{
+.top-logo-test {
   width: 100%;
   margin: auto;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 130px;
+  margin-top: 105px;
   z-index: 99;
   background: #ffffff;
   border-radius: 5px;
   padding: 5px 0;
 }
+
 #top-logo-test{
   height: 80px;
   width: auto;
