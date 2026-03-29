@@ -9,6 +9,11 @@ body{
       background: #E8E8E8;
       margin-top: 50px;
       font-family: hind siliguri;
+      -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
 }
 
 .top-logo_M_area{
