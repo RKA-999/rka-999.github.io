@@ -288,7 +288,7 @@ window.addEventListener('load', function() {
 
 
 
-// ১. সার্ভিস ওয়ার্কার রেজিস্টার করা (ক্রোমকে সন্তুষ্ট করতে)
+// ১. সার্ভিস ওয়ার্কার রেজিস্টার করা
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('service-worker.js')
@@ -298,60 +298,64 @@ if ('serviceWorker' in navigator) {
 }
 
 let deferredPrompt;
-const LOGO_URL = 'icon-512x512.png'; // আপনার লোগোর নাম
+const LOGO_URL = 'icon-512x512.png'; // আপনার লোগোর সঠিক নাম
 
-// ২. সাধারণ পপআপ এর HTML তৈরি
-const simplePopupHtml = `
-  <div id="simple-pwa-popup" style="display: none; position: fixed; top: -80px; left: 0; width: 100%; background: #fff; color: #000; padding: 10px 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 99999; transition: top 0.4s ease-in-out; border-bottom: 1px solid #ddd; font-family: sans-serif; box-sizing: border-box;">
-    <div style="display: flex; align-items: center; justify-content: space-between; max-width: 600px; margin: 0 auto;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="${LOGO_URL}" alt="Logo" style="width: 35px; height: 35px; border-radius: 5px;">
-        <span style="font-size: 14px; font-weight: bold;">অ্যাপ ইনস্টল করুন</span>
-      </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <button id="simple-install-btn" style="background: #007bff; color: #fff; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold;">ইনস্টল</button>
-        <button id="simple-close-btn" style="background: transparent; color: #888; border: none; font-size: 18px; cursor: pointer; padding: 0 5px;">✖</button>
+// পেজ পুরোপুরি তৈরি হওয়ার পর এই ফাংশনটি রান হবে
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // ২. সাধারণ পপআপ এর HTML তৈরি
+  const simplePopupHtml = `
+    <div id="simple-pwa-popup" style="display: none; position: fixed; top: -80px; left: 0; width: 100%; background: #fff; color: #000; padding: 10px 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 99999; transition: top 0.4s ease-in-out; border-bottom: 1px solid #ddd; font-family: sans-serif; box-sizing: border-box;">
+      <div style="display: flex; align-items: center; justify-content: space-between; max-width: 600px; margin: 0 auto;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <img src="${LOGO_URL}" alt="Logo" style="width: 35px; height: 35px; border-radius: 5px;">
+          <span style="font-size: 14px; font-weight: bold;">অ্যাপ ইনস্টল করুন</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <button id="simple-install-btn" style="background: #007bff; color: #fff; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: bold;">ইনস্টল</button>
+          <button id="simple-close-btn" style="background: transparent; color: #888; border: none; font-size: 18px; cursor: pointer; padding: 0 5px;">✖</button>
+        </div>
       </div>
     </div>
-  </div>
-`;
+  `;
 
-document.body.insertAdjacentHTML('afterbegin', simplePopupHtml);
+  // বডিতে পপআপ যুক্ত করা
+  document.body.insertAdjacentHTML('afterbegin', simplePopupHtml);
+
+  // ৩. ৩ সেকেন্ড পর পপআপ দেখানো
+  setTimeout(() => {
+    const popup = document.getElementById('simple-pwa-popup');
+    if (popup) {
+      popup.style.display = 'block';
+      setTimeout(() => {
+        popup.style.top = '0px'; 
+      }, 10);
+    }
+  }, 3000); 
+
+  // ৪. ইনস্টল বাটনের কাজ
+  document.getElementById('simple-install-btn').addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      deferredPrompt = null; 
+      hideSimplePopup();
+    } else {
+      alert('ইনস্টল করতে ব্রাউজারের উপরে ডানে ৩টি ডট (Menu) আইকনে ক্লিক করে "Install app" বা "Add to Home Screen" এ চাপ দিন।');
+      hideSimplePopup();
+    }
+  });
+
+  // ৫. ক্লোজ বাটনের কাজ
+  document.getElementById('simple-close-btn').addEventListener('click', () => {
+    hideSimplePopup();
+  });
+});
 
 // ৩. ব্রাউজারের ইনস্টল সিগন্যাল ধরা
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault(); 
   deferredPrompt = e;
-});
-
-// ৪. ৩ সেকেন্ড পর পপআপ দেখানো
-setTimeout(() => {
-  const popup = document.getElementById('simple-pwa-popup');
-  if (popup) {
-    popup.style.display = 'block';
-    setTimeout(() => {
-      popup.style.top = '0px'; 
-    }, 10);
-  }
-}, 3000); 
-
-// ৫. ইনস্টল বাটনের কাজ
-document.getElementById('simple-install-btn').addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-    deferredPrompt = null; 
-    hideSimplePopup();
-  } else {
-    // যদি সার্ভিস ওয়ার্কার লোড হতে সামান্য দেরি হয়
-    alert('ইনস্টল করতে ব্রাউজারের উপরে ডানে ৩টি ডট (Menu) আইকনে ক্লিক করে "Install app" বা "Add to Home Screen" এ চাপ দিন।');
-    hideSimplePopup();
-  }
-});
-
-// ৬. ক্লোজ বাটনের কাজ
-document.getElementById('simple-close-btn').addEventListener('click', () => {
-  hideSimplePopup();
 });
 
 function hideSimplePopup() {
@@ -363,6 +367,3 @@ function hideSimplePopup() {
     }, 400);
   }
 }
-
-
-
