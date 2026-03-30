@@ -9,7 +9,7 @@ body{
       background: #E8E8E8;
       margin-top: 50px;
       font-family: hind siliguri;
-      -webkit-touch-callout: none;
+     -webkit-touch-callout: none;
      -webkit-user-select: none;
      -moz-user-select: none;
      -ms-user-select: none;
@@ -18,10 +18,10 @@ body{
 
 .top-logo_M_area{
       width: 100%;
-      background: rgba(0, 0, 0, .1);
+      background: rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(30px);
       align-items: center;
-      height: 52px;
+      height: auto;
       align-items: center;
       margin-top: -52px;
       position: fixed;
@@ -31,8 +31,9 @@ body{
 #top-logo_M_img{
   height: 50px;
   width: auto;
-  margin-left: 5px;
-  border-radius: 50px;
+  margin-top: 5px;
+  margin-left: 9px;
+  border-radius: 5px;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 5);
 }
 
@@ -51,7 +52,7 @@ body{
 }
 
 #top-logo-test{
-  height: 80px;
+  height: 95px;
   width: auto;
   border-radius: 10px;
   animation: logo 1.2s ease-out;
@@ -66,6 +67,7 @@ body{
   }
   75%{
     transform: translateY(-20px);
+    opacity: 0.;
   }
   100%{
     transform: translateY(0);
@@ -121,26 +123,25 @@ body{
 
 .lang-switch-container {
   position: fixed;
-  top: 54px;
-  right: 3px;
-  padding: 11px 10px;
+  top: 59.5px;
+  right: 7.6px;
+  padding: 10px 8px;
   border-radius: 5px;
-  background: #111111;
-  color: white;
+  background: rgba(0, 255, 255, 1);
   font-size: 13px;
   font-family: hind siliguri;
   font-weight: 700;
   z-index: 1001;
-  border: .1px solid #c5a059;
+  border: .1px solid white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
 }
 .lang-label{
   font-size: 13.5px;
-  color: #FFFFFF;
+  color: #111111;
 }
 
 #lang-btn {
-  background: #D4AF37;
+  background: white;
   color: #000000;
   border: none;
   padding: 2px 10px;
@@ -175,7 +176,7 @@ body{
   align-items: center;
   justify-content: center;
   z-index: 1;
-  transition: .7s all ease-in;
+  transition: .5s all ease-in;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
 }
 .last-update-h{
@@ -193,7 +194,7 @@ body{
   color: black;
 }
 .last-update:hover{
-  scale: 1.01;
+  scale: 1.02;
 }
 /* last update icon */
 #history{
@@ -464,7 +465,7 @@ body{
       width: 28%;
       font-weight: 700;
       font-family: Hind Siliguri;
-      color:#21303a;
+      color: #21303a;
       text-align: center;
 }
 .desc1{
@@ -477,13 +478,13 @@ body{
       width: 28%;
       text-align: center;
       font-weight: 900;
-      color:#16303a;
+      color: #16303a;
       text-align: center;
 }
 .goldtable th {
       background: #0d2930;
       color: var(--gold);
-      padding: 20px;
+      padding: 18px 0px;
       font-size: 16px;
       text-align: center;
 }
@@ -569,14 +570,14 @@ body{
 .price2{
       width: 28%;
       text-align: center;
-      font-weight: 900;
-      color:#16303a;
+      font-weight: 800;
+      color: #16303a;
       text-align: center;
 }
 .silvertable th {
       background: #0d2930;
       color: var(--gold);
-      padding: 17px;
+      padding: 18px 0px;
       font-size: 15px;
       text-align: center;
 }
