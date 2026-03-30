@@ -370,7 +370,14 @@ function hideSimplePopup() {
 
 
 // Will not download Any image
+window.addEventListener('contextmenu', function(e) {
+  if (e.target.tagName === 'IMG') {
+    e.preventDefault();
+  }
+}, false);
+
 document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('contextmenu', e => e.preventDefault());
-  img.addEventListener('dragstart', e => e.preventDefault());
+  img.setAttribute('draggable', 'false');
+  img.style.webkitTouchCallout = 'none';
+  img.style.webkitUserSelect = 'none';
 });
