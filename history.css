@@ -7,18 +7,18 @@ body{
       background: #E8E8E8;
       font-family: hind siliguri;
       -webkit-touch-callout: none;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
 }
 
 .top-logo{
       width: 100%;
+      height: auto;
       background: rgba(0, 0, 0, .1);
       backdrop-filter: blur(30px);
       align-items: center;
-      height: 52px;
       align-items: center;
       top: 0;
       left: 0;
@@ -40,7 +40,7 @@ body{
   padding: 5px 0;
 }
 #top-logo-test{
-  height: 80px;
+  height: 95px;
   width: auto;
   border-radius: 10px;
   animation: logo 1.2s ease-out;
@@ -96,8 +96,9 @@ body{
 #top-logo{
       height: 50px;
       width: auto;
-      margin-left: 5px;
-      border-radius: 25px;
+      margin-top: 5px;
+      margin-left: 8px;
+      border-radius: 5px;
       box-shadow: 1px 2px 3px rgba(0, 0, 0, 5);
 }
 
@@ -255,12 +256,12 @@ body{
 
 .lang-switch-container {
   position: fixed;
-  top: 2px;
-  right: 3px;
+  top: 8px;
+  right: 8px;
   padding: 11px 10px;
   border-radius: 5px;
-  background: black;
-  color: white;
+  background: rgba(0, 255, 255, 1);
+  color: #111111;
   font-size: 13px;
   font-family: hind siliguri;
   font-weight: 700;
@@ -269,7 +270,7 @@ body{
 }
 
 #lang-btn{
-  background: #00FFED;
+  background: white;
   color: black;
   border: none;
   padding: 2px 10px;
@@ -280,6 +281,11 @@ body{
   font-weight: bold;
   font-family: hind siliguri;
 }
+#lang-btn:hover{
+  background: #7501FF;
+  color: white;
+}
+
 /* Copyright & visitor*/
 .copyright {
   text-align: center;
