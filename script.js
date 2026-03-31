@@ -92,7 +92,7 @@ function toggleLanguage() {
     if (currentLang === 'en')
     // 2 Change
     {
-      text = text.replace('অপরিবর্তিত আছে','Remains Unchanged').replace('অপরিবর্তিতই আছে', 'Remains Unchanged');
+      text = text.replace('টাকা বৃদ্ধি পেয়েছে','BDT Increasde').replace('টাকা বৃদ্ধি পেয়েছ', 'Remain Unchanged');
     } else {
       text = text.replace('BDT Decreased', 'টাকা হ্রাস পেয়েছে').replace('Remains Unchanged', 'অপরিবর্তিতই আছে');
     }
@@ -365,8 +365,6 @@ function hideSimplePopup() {
     }, 400);
   }
 }
-
-
 
 
 // Will not download Any image
