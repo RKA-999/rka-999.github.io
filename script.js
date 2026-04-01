@@ -94,7 +94,7 @@ function toggleLanguage() {
     {
       text = text.replace('টাকা বৃদ্ধি পেয়েছে','BDT Increased').replace('অপরিবর্তিত আছে', 'Remain Unchanged');
     } else {
-      text = text.replace('BDT Decreased', 'টাকা হ্রাস পেয়েছে').replace('Remains Unchanged', 'অপরিবর্তিত আছে');
+      text = text.replace('BDT Decrease', 'টাকা হ্রাস পেয়েছে').replace('Remains Unchanged', 'অপরিবর্তিত আছে');
     }
     cell.innerText = convertNum(text);
   });
@@ -145,7 +145,7 @@ function toggleLanguage() {
     let timeText = lastUpdatePs[1].innerText;
     // 2 change area last AM PM
     if (currentLang === 'en') {
-      dateText = dateText.replace('তারিখ:', 'Date:').replace('মার্চ', 'March');
+      dateText = dateText.replace('তারিখ:', 'Date:').replace('এপ্রিল', 'April');
       timeText = timeText
       .replace('সময়:', 'Time:')
       .replace('সকাল', '')
@@ -154,7 +154,7 @@ function toggleLanguage() {
       .replace('সন্ধ্যা', '')
       .replace('রাত', '').replace('ঘটিকা', "AM");
     } else {
-      dateText = dateText.replace('Date:', 'তারিখ:').replace('April', 'এপ্রিল);
+      dateText = dateText.replace('Date:', 'তারিখ:').replace('March', 'মার্চ');
       
       
       
