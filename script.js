@@ -154,7 +154,7 @@ function toggleLanguage() {
       .replace('সন্ধ্যা', '')
       .replace('রাত', '').replace('ঘটিকা', "AM");
     } else {
-      dateText = dateText.replace('Date:', 'তারিখ:').replace('March', 'মার্চ');
+      dateText = dateText.replace('Date:', 'তারিখ:').replace('April', 'এপ্রিল);
       
       
       
