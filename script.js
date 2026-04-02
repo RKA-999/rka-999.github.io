@@ -152,7 +152,7 @@ function toggleLanguage() {
       .replace('দুপুর', '')
       .replace('বিকাল', '')
       .replace('সন্ধ্যা', '')
-      .replace('রাত', '').replace('ঘটিকা', "AM");
+      .replace('রাত', '').replace('ঘটিকা', "PM");
     } else {
       dateText = dateText.replace('Date:', 'তারিখ:').replace('March', 'মার্চ');
       
