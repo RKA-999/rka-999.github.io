@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>বাংলাদেশের জুয়েলারি সমিতি</title>
 
-  <!-- ===== FAVICONS ===== -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=7">
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=7">
-  <link rel="icon" type="image/png" href="/favicon.png?v=7">
-  <link rel="apple-touch-icon" href="/favicon.png?v=7">
+<!-- FAVICON (VERY IMPORTANT) -->
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png?v=50">
+<link rel="icon" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
 
-  <!-- ===== Manifest ===== -->
-  <link rel="manifest" href="/manifest.json?v=7">
+<!-- MANIFEST -->
+<link rel="manifest" href="manifest.json?v=50">
+
+<!-- THEME -->
+<meta name="theme-color" content="#d4af77">
 
   <!-- ===== Open Graph / Social (WhatsApp + Home Screen Preview) ===== -->
   <meta property="og:title" content="বাংলাদেশ জুয়েলারি অ্যাপ - আজকের সোনা ও রুপার দর">
@@ -312,7 +314,11 @@
 
 
 
-
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
 <script src="script.js"></script>
 </body>
 </html>
