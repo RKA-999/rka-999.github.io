@@ -354,14 +354,17 @@ Notification.requestPermission().then((permission) => {
         console.log('Notification permission granted.');
         // টোকেন সংগ্রহ (VAPID key ছাড়া এটি কাজ করবে না)
         getToken(messaging, { vapidKey: 'BAPT_iVAAY80EDQwHKQm4kIVWZ4Q4uxg0KyEsEjdSob6xYOjXoojd9Qti4NgbXfPmeBQvK9Um8B-RQMx0gkvP7I' })
-        .then((token) => {
-    console.log("FCM Token:", token);
-    alert("Copy this Token: " + token); // এটি আপনাকে টোকেন কপি করতে সাহায্য করবে
-})
-        .catch((err) => {
-    console.log("Token error:", err);
-    alert("Error getting token: " + err);
-});
+        .then((currentToken) => {
+          if (currentToken) {
+            console.log("FCM Token:", currentToken);
+          }
+        }).catch((err) => {
+          console.log('Token error:', err);
+        });
+      }
+  });
+}
+requestPermission();
   </script>
   <!-- pwa pop-up -->
   <script>
