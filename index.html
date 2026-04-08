@@ -72,6 +72,62 @@
     <p class="top-logo-text">বাংলাদেশ জুয়েলারি সমিতি</p>
   </div>
 
+
+
+  <!-- Time -->
+    <div class="timer-container">
+    <p class="reddot"></p>&nbsp;
+    <span id="bangla-date-time">লোডিং...</span>
+  </div>
+  <script>
+function updateBanglaTime() {
+    const now = new Date();
+
+    const days = ['রবিবার', 'সোমবার', 'মঙ্গলবার', 'বুধবার', 'বৃহস্পতিবার', 'শুক্রবার', 'শনিবার'];
+    const months = ['জানুয়ারি', 'ফেব্রুয়ারি', 'মার্চ', 'এপ্রিল', 'মে', 'জুন', 'জুলাই', 'আগস্ট', 'সেপ্টেম্বর', 'অক্টোবর', 'নভেম্বর', 'ডিসেম্বর'];
+    const banglaNumbers = {
+        '0': '০', '1': '১', '2': '২', '3': '৩', '4': '৪', '5': '৫', '6': '৬', '7': '৭', '8': '৮', '9': '৯'
+    };
+
+    function toBanglaNumber(n) {
+        return n.toString().split('').map(digit => banglaNumbers[digit] || digit).join('');
+    }
+
+
+    const dayName = days[now.getDay()];
+    const date = toBanglaNumber(now.getDate());
+    const monthName = months[now.getMonth()];
+    const year = toBanglaNumber(now.getFullYear());
+    
+
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+    let ampm = hours >= 12 ? 'অপরাহ্ন' : 'পূর্বাহ্ণ';
+    
+    let period = "";
+    if (hours >= 5 && hours < 12) period = "সকাল";
+    else if (hours >= 12 && hours < 15) period = "দুপুর";
+    else if (hours >= 15 && hours < 18) period = "বিকাল";
+    else if (hours >= 18 && hours < 20) period = "সন্ধ্যা";
+    else period = "রাত";
+
+    hours = hours % 12 || 12;
+    const bHours = toBanglaNumber(hours);
+    const bMinutes = toBanglaNumber(minutes < 10 ? '0' + minutes : minutes);
+    const bSeconds = toBanglaNumber(seconds < 10 ? '0' + seconds : seconds);
+
+    const finalString = `${dayName} ${date} এ ${monthName} ${year}। ${period} ${bHours}:${bMinutes}:${bSeconds}`;
+
+    document.getElementById('bangla-date-time').innerText = finalString;
+}
+
+setInterval(updateBanglaTime, 1000);
+updateBanglaTime();
+  </script>
+
+
+  
   
 <!-- Last Update -->
    <div class="last-update">
