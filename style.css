@@ -153,10 +153,12 @@ body{
   font-size: 13px;
   font-weight: bold;
   font-family: hind siliguri;
+  transition: 0.7s all ease;
 }
 #lang-btn:hover{
   background: #7501FF;
   color: white;
+  transition: 0.7s all ease;
 }
 
 
