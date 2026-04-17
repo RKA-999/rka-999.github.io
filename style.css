@@ -8,7 +8,12 @@ body{
       overflow-x: hidden;
       align-items: center;
       min-height: 100vh;
-      background: #E8E8E8;
+      background-image: url('https://bajus-live.github.io/storage/photos/bg.jpg');
+      background-size: 100px;
+      background-position: center;
+      background-repeat: repeat; 
+      background-attachment: fixed;
+      min-height: 100vh;
       margin-top: 50px;
       font-family: hind siliguri;
      -webkit-touch-callout: none;
@@ -46,7 +51,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 105px;
+  top: 0;
   z-index: 99;
   background: #ffffff;
   border-radius: 5px;
@@ -107,74 +112,17 @@ body{
   font-weight: 800;
   color: #B28A00;
 }
-/*#top-logo{
-      height: 60px;
-      width: 100%;
-}*/
-
-/* Main logo */
-#top-logo{
-      height: 50px;
-      width: auto;
-      margin-left: 5px;
-      border-radius: 5px;
-      box-shadow: 1px 2px 3px rgba(0, 0, 0, 5);
-}
-
-/* Translate*/
-
-.lang-switch-container {
-  position: fixed;
-  top: 59.5px;
-  right: 7.6px;
-  padding: 10px 8px;
-  border-radius: 5px;
-  background: rgba(0, 255, 255, 1);
-  font-size: 13px;
-  font-family: hind siliguri;
-  font-weight: 700;
-  z-index: 1001;
-  border: .1px solid white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-}
-.lang-label{
-  font-size: 13.5px;
-  color: #111111;
-}
-
-#lang-btn {
-  background: white;
-  color: #000000;
-  border: none;
-  padding: 2px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  font-size: 13px;
-  font-weight: bold;
-  font-family: hind siliguri;
-  transition: 0.7s all ease;
-}
-#lang-btn:hover{
-  background: #7501FF;
-  color: white;
-  transition: 0.7s all ease;
-}
-
-
-
-
-
 /* Time */
     .timer-container {
-      width: fit-content;
-      background-color: #e0f7fa;
+      width: 270px;
+      background-color: white;
       padding: 10px 10px;
       border-radius: 10px;
       font-family: hind siliguri, sans-serif;
       color: #333;
       font-weight: bold;
-      border: 1px solid #b2ebf2;
+      border: .1px solid black;
+      box-shadow: 0 0 15px rgba(0, 0, 0, .3), 0 0 5px;
       font-size: 15px;
       display: flex;
       align-items: center;
@@ -222,68 +170,36 @@ body{
         transform: scale(1);
         opacity: 0.6;
       }
-      
       100% {
         transform: scale(2.5);
         opacity: 0;
       }
     }
 
-
-
-
-
 /* Last update */
-.last-update{
-  background-color: #FFFFFF;
-  border: .1px solid #F1E5E5;
-  border-radius: 20px;
-  margin-left: 20px;
-  margin-top: 60px;
-  margin: auto;
-  width: 65%;
-  height: auto;
-  display: flex;
-  align-items: center;
+.last_Up{
+  text-align: center;
   justify-content: center;
-  z-index: 1;
-  transition: .5s all ease-in;
-  box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
 }
-.last-update-h{
-  font-size: 18px;
-  color: red;
-  text-align: center;
-  margin-top: 2px;
-}
-.last-update-b{
+.last_Up_text{
+  font-weight: 400;
   font-size: 15px;
-  font-weight: 800;
-  font-family: hind siliguri;
-  text-align: center;
-  margin-top: -10px;
-  color: black;
+  font-style: italic;
+  animation: last_Up_t infinite 1s;
 }
-.last-update:hover{
-  scale: 1.02;
-}
-/* last update icon */
-#history{
-  animation: spin 0.6s ease-in-out;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
+@keyframes last_Up_t{
+  from{
+    opacity: 0;
   }
-  to {
-    transform: rotate(-360deg);
+  to{
+    opacity: 1;
   }
 }
 
 /* News */
 .news{
   margin-top: 10px;
+  margin-bottom: 0px;
   width: 100%;
   height: auto;
   background: #F9F4F9;
@@ -305,17 +221,17 @@ body{
 
 /* gram banner */
 .price-g{
-  background: white;
+  background: black;
   width: 100%;
-  height: 423px;
+  height: 390px;
   color: red;
   text-align: center;
   margin: auto;
-  margin-bottom: 0px;
+  margin-bottom: 180px;
   align-items: center;
-  margin-top: 11px;
+  margin-top: 0px;
   border: 1px solid #F1E5E5;
-  border-radius: 20px;
+  border-radius: 1px;
   font-weight: bold; 
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
   transition: .7s all ease;
@@ -332,7 +248,7 @@ body{
   }
 }
 .price-g:hover{
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .price-banner-g, .banner-g{
   width: 100%;
@@ -341,7 +257,7 @@ body{
 
 /* Download Button*/
 
-.download-btn{
+.download-btn1{
   height: 10px;
   width: 80px;
   display: inline-flex;
@@ -353,18 +269,18 @@ body{
   text-decoration: none;
   border-radius: 10px;
   font-family: hind siliguri;
-  gap: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  gap: 4px;
+  transition: 0.3s ease, transform 0.2s ease;
   border: none;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
-.download-btn:hover {
+.download-btn1:hover {
   background-color: #1b5e20;
 }
 
-.download-btn:active {
+.download-btn1:active {
   background-color: #1EFF04;
 }
 
@@ -381,9 +297,9 @@ body{
 /* Vori banner */
 
 .price-v{
-  background: white;
+  background: black;
   width: 100%;
-  height: 585px;
+  height: 560px;
   color: red;
   text-align: center;
   margin: auto;
@@ -391,7 +307,7 @@ body{
   align-items: center;
   margin-top: 11px;
   border: 1px solid #F1E5E5;
-  border-radius: 20px;
+  border-radius: 1px;
   font-weight: bold; 
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
   transition: .7s all ease;
@@ -408,7 +324,7 @@ body{
   }
 }*/
 .price-v:hover{
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 .price-banner-v, .banner-v{
   width: 100%;
@@ -416,7 +332,7 @@ body{
 }
 
 /* Download Button*/
-.download-btn{
+.download-btn2{
   height: 10px;
   width: 60px;
   display: inline-flex;
@@ -428,18 +344,23 @@ body{
   text-decoration: none;
   border-radius: 10px;
   font-family: hind siliguri;
-  gap: 5px;
+  gap: 4px;
   transition: background-color 0.3s ease, transform 0.2s ease;
   border: none;
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .8);
+  margin-top: 7px;
+}
+.pdf_i{
+  height: 18px; 
+  width: auto;
 }
 
-.download-btn:hover {
+.download-btn2:hover {
   background-color: #1b5e20;
 }
 
-.download-btn:active {
+.download-btn2:active {
   background-color: #1EFF04;
 }
 
@@ -450,6 +371,9 @@ body{
 .btn-text {
   font-weight: bold;
   font-size: 12.5px;
+  display: flex;
+  text-align: center;
+  gap: 4px;
 }
 .button-group {
   display: flex;
@@ -470,7 +394,7 @@ body{
   justify-content: center;
   background-color: rgba(0, 255, 233, 1);
   color: #333;
-  padding: 10px 15px;
+  padding: 10.5px 15px;
   text-decoration: none;
   border-radius: 10px;
   font-family: Hind Siliguri;
@@ -480,7 +404,7 @@ body{
   cursor: pointer;
   box-shadow: 1px 2px 3px rgba(0, 0, 0, .2);
   transition: all 0.4s ease;
-  margin-top: 20px;
+  margin-top: 7px;
 }
 .view-btn:hover {
   background-color: rgba(10, 220, 202, 1);
@@ -489,7 +413,7 @@ body{
   background: #FFFFFF;
   transform: scale(0.98);
 }
-.download-btn {
+.download-btn2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -499,7 +423,7 @@ body{
   text-decoration: none;
   border-radius: 10px;
   font-family: Hind Siliguri;
-  gap: 5px;
+  gap: 4px;
   transition: background-color 0.4s ease, transform 0.2s ease;
   border: none;
   cursor: pointer;
@@ -515,18 +439,18 @@ body{
       width: 100%;
       border-collapse: collapse;
       overflow: hidden;
-      border-radius: 20px;
-      display: flex;
+      border-radius: 1px;
       text-align: center;
       align-items: center;
       justify-content: center;
+      border: 1px solid #D5A600;
 }
 #golddown{
     transition: .7s all ease;
     margin-bottom: 11px;
 }
 #golddown:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 #main_text_gold_banner{
   color: #D5A600;
@@ -562,74 +486,74 @@ body{
 .goldtable td{
       padding: 25px 25px;
       background: #fdf1af;
-      border-bottom: solid rgba(0, 0, 0, 0.7);
       font-size: 15px;
       text-align: center;
       vertical-align: middle;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      border-left: 0.5px solid rgba(0, 0, 0, 0.1);
+      border-right: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 #goldbanner{
-      justify-content: center;
       height: auto;
       width: 100%;
       border-radius: 20px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      justify-content: center;
 }
 #gb_img_position{
       padding: 0px;
       background: #0d2930;
-  
 }
 #goldbanner1{
       width: 100%;
       height: auto;
+      display: block;
 }
 
-
-
 /* silver banner */
-
+.silvertable{
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 1px;
+      margin-top: -27px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px auto #42445A;
+      border: 1px solid var(--silver);
+}
+#silverbanner {
+    height: auto;
+    width: 100%;
+    display: block;
+}
 #sb_img_position{
         padding: 0px;
-        background: #0d2930;
+        line-height: 0;
+        background: transparent;
+        border: none;
 }
 #main_text_silver_banner{
   color: white;
+  letter-spacing: 0.6px;
 }
 #silverbanner1{
         width: 100%;
         height: auto;
 }
-#silverbanner {
-    height: auto;
-    width: 100%;
-    display: flex;
-    border: 1px solid silver;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-.silvertable{
-      margin-top: -27px;
-      width: 100%;
-      margin-top: 0px auto#42445A;
-      border-collapse: collapse;
-      overflow: hidden;
-      border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 200px;
-}
+
 #silverdown{
     transition: .7s all ease;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 #silverdown:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 .product2{
       width: 28%;
       font-weight: 700; 
-      color:#21303a;
+      color: #21303a;
       text-align: center;
 }
 .desc2{
@@ -647,18 +571,21 @@ body{
 }
 .silvertable th {
       background: #0d2930;
-      color: var(--gold);
+      color: var(--silver);
       padding: 18px 0px;
       font-size: 15px;
       text-align: center;
+      border-bottom: 1px solid var(--silver);
 }
 .silvertable td{
       padding: 25px 25px;
-      background: var(--silver);
-      border-bottom: solid rgba(0, 0, 0, 0.7);
+      background: #EFEFEF;
       font-size: 15px;
       text-align: center;
       vertical-align: middle;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      border-left: 0.5px solid rgba(0, 0, 0, 0.1);
+      border-right: 0.5px solid rgba(0, 0, 0, 0.1);
     }
 
 
@@ -672,18 +599,16 @@ body{
       left: 0;
       right: 0;
       width: 100%;
-      padding: 20px 0;
+      padding: 11.5px 0;
       background-color: rgba(0, 0, 0, 1);
-      border: .1px solid #F1E5E9;
+      border: 0.1px solid #F1E5E9;
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding-bottom: 10px;
       box-shadow: 1px 2px 5px 5px rgba(255, 255, 255, .4);
       z-index: 1000;
-      -webkit-transform: translateZ(0);
-      transform: translateZ(0);
-}
+    }
     .nav-item {
       display: flex;
       justify-content: space-around;
@@ -694,7 +619,7 @@ body{
       background: rgba(255, 255, 255, .01);
     }
     .nav-item:hover{
-      background: rgba(255, 255, 255,.1);
+      
     }
     .nav-item.active {
       color: #00FFF0;
@@ -707,16 +632,44 @@ body{
       color: inherit;
       transition: color 0.3s ease-in-out;
       background: rgba(255, 255, 255, .01);
-      color: white;
+      color: #FFFFFF;
       box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
       border-radius: 10px;
+      border: .1px solid white;
+      transition: all 0.3s ease-in-out;
+      }
+      .nav-item a:hover{
+        transition: 0.3s all ease-in;
+        transform: scale(1.04);
+        border: .1px solid black;
+        box-shadow: 0 0 15px #20BBFF, 0 0 5px rgba(0, 255, 255, .7);
+      }
+      .nav-item.active a{
+        transition: 0.3s all ease-in;
+        border: 1px solid black;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 1), 0 0 4px rgba(0, 255, 255, 1);
+      }
+      .nav1{
+        padding: 10px 21px;
+      }
+      .nav2{
+        padding: 10px 13.5px;
+      }
+      .nav3{
+        padding: 10px 11px;
+      }
+      .nav4{
+        padding: 10px 0px;
+      }
+     .nav5{
+        padding: 10px 6.5px;
       }
     .nav-item i{
       font-size: 18px;
       margin-bottom: 0px;
       display: inline-block;
       padding: 0px 0px;
-      color: #E7EBEB;
+      color: #FFFFFF;
       transition: background-color 0.3s ease, color 0.3s ease;
       background: black;
       backdrop-filter: blur(50px);
@@ -730,10 +683,14 @@ body{
       color: #00FFF0;
       font-weight: bold;
     }
-    
+/* End */
 
 
-    
+
+
+
+
+/* Top Scrollable Text */
     .ticker-wrap{
       position: fixed;
       top: 0;
@@ -773,10 +730,17 @@ body{
   flex-flow: column-reverse;
   margin-top: -180px;
 }
+.copyright_link{
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
 .visitor_c {
   position: absolute;
   font-size: 14px;
-  margin-top: 30px;
+  margin-top: -120px;
+  margin-bottom: 0px;
 }
 
 
