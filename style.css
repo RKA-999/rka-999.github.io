@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 html{
       scroll-behavior: smooth;
+            /*fix*/
+      overscroll-behavior-y: none !important;
 }
 body{
       overscroll-behavior: none;
@@ -21,6 +23,13 @@ body{
      -moz-user-select: none;
      -ms-user-select: none;
      user-select: none;
+           /* fix */
+     overscroll-behavior-y: none !important;
+     overscroll-behavior: none;
+     overscroll-behavior-y: none;
+     height: 100vh;
+     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .top-logo_M_area{
@@ -594,7 +603,7 @@ body{
 
 /*Bottom Navbar */
 .navbar{
-      position: fixed;
+      position: fixed!important;
       bottom: 0;
       left: 0;
       right: 0;
@@ -607,7 +616,12 @@ body{
       align-items: center;
       padding-bottom: 10px;
       box-shadow: 1px 2px 5px 5px rgba(255, 255, 255, .4);
-      z-index: 1000;
+      z-index: 1000000!important;
+            /*fix*/
+      transform: translateZ(0) !important;
+      -webkit-transform: translateZ(0) !important;
+      backface-visibility: hidden !important;
+      -webkit-backface-visibility: hidden !important;
     }
     .nav-item {
       display: flex;
