@@ -12,7 +12,7 @@
 
 <!-- MANIFEST -->
  <!-- version change -->
-<link rel="manifest" href="manifest.json?v=1.1">
+<link rel="manifest" href="manifest.json?v=1.2">
 
 <!-- THEME -->
 <meta name="theme-color" content="#d4af77">
@@ -34,7 +34,7 @@
 
   <!-- CSS -->
   <!-- version change -->
-  <link rel="stylesheet" href="style.css?v=1.1">
+  <link rel="stylesheet" href="style.css?v=1.2">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=visibility" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -43,16 +43,16 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <!-- OneSignal -->
+  <!-- OneSignal --><!--
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
+  <script>
   window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(async function(OneSignal) {
     await OneSignal.init({
       appId: "f6688273-a9a3-42ab-b52f-d68fefad193e",
     });
   });
-</script>
+</script> -->
 </head>
 <body>
    <!-- Logo -->
@@ -120,7 +120,7 @@ updateBanglaTime();
   </script>
 <!-- Last Update -->
  <div class="last_Up">
-     <p class="last_Up_text">আপডেটেড: ২১ এপ্রিল ২০২৬, রাত ০৭:৩৩ মিনিট</p>
+     <p class="last_Up_text">আপডেটেড: ২১ এপ্রিল ২০২৬, রাত ১০:০৩ মিনিট</p>
  </div>
 <!-- News -->
    <div class="news">
@@ -365,17 +365,13 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 <!-- version change -->
-<script src="script.js?v=1.1"></script>
+<script src="script.js?v=1.2"></script>
 
 <!-- Google Firebase -->
   <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  import { getMessaging, getToken, onMessage } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-messaging.js";
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: "AIzaSyCJm0C-1TCoR3B1kjNEf13uvvcO9C1lIU8",
     authDomain: "bajus-d2fdd.firebaseapp.com",
@@ -386,30 +382,32 @@ if ('serviceWorker' in navigator) {
     measurementId: "G-TKHGQ0MY52"
   };
 
-  // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-    import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-messaging.js";
+  const messaging = getMessaging(app);
 
-const messaging = getMessaging(app);
-
-// নোটিফিকেশন পারমিশন চাওয়া
-Notification.requestPermission().then((permission) => {
+  async function requestPermission() {
+    const permission = await Notification.requestPermission();
     if (permission === 'granted') {
-        console.log('Notification permission granted.');
-        getToken(messaging, { vapidKey: 'BAPT_iVAAY80EDQwHKQm4kIVWZ4Q4uxg0KyEsEjdSob6xYOjXoojd9Qti4NgbXfPmeBQvK9Um8B-RQMx0gkvP7I' })
-        .then((currentToken) => {
-          if (currentToken) {
-            console.log("FCM Token:", currentToken);
-          }
-        }).catch((err) => {
-          console.log('Token error:', err);
+      try {
+        const currentToken = await getToken(messaging, { 
+          vapidKey: 'BAPT_iVAAY80EDQwHKQm4kIVWZ4Q4uxg0KyEsEjdSob6xYOjXoojd9Qti4NgbXfPmeBQvK9Um8B-RQMx0gkvP7I' 
         });
+        if (currentToken) {
+          console.log("FCM Token:", currentToken);
+        }
+      } catch (err) {
+        console.log('Token error:', err);
       }
+    }
+  }
+
+  // ইউজার ওয়েবসাইটের ভেতরে থাকা অবস্থায় মেসেজ পেলে অ্যালার্ট দেখাবে
+  onMessage(messaging, (payload) => {
+    alert("নতুন নোটিফিকেশন: " + payload.notification.title + "\n" + payload.notification.body);
   });
-}
-requestPermission();
-  </script>
+
+  requestPermission();
+</script>
   <!-- pwa pop-up -->
   <script>
 let deferredPrompt;
