@@ -20,14 +20,6 @@
     }
 
 
-// PWA অটো-রিফ্রেশ
-window.addEventListener('load', function() {
-    if (!sessionStorage.getItem('pwa_auto_reloaded')) {
-        sessionStorage.setItem('pwa_auto_reloaded', 'true');
-        location.reload();
-    }
-});
-
 // --- সাধারণ PWA ইনস্টল প্রম্পট ---
 
 let deferredPrompt;
